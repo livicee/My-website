@@ -1,0 +1,19 @@
+{
+  "name": "livi-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5193 --strictPort",
+    "validate:content": "node scripts/check-content.mjs",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "test": "node tests/run.mjs && node tests/evidence-previews.mjs && node tests/content-validation.mjs && node tests/content-build.mjs && node tests/fixture-runner.mjs",
+    "fixtures": "node tests/fixtures.mjs",
+    "check": "npm run validate:content && tsc --noEmit && tsc --noEmit -p tsconfig.node.json && npm test"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "vite": "^7.1.5"
+  }
+}
