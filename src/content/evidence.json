@@ -1,739 +1,138 @@
 [
   {
-    "collection": "artefacts",
-    "id": "asset-model",
-    "slug": "asset-model",
-    "title": "Asset metadata model",
-    "subtitle": "Model / DAM migration",
-    "summary": "The fields that make an asset searchable and keep usage conditions on the record.",
-    "year": "To confirm",
+    "collection": "experience",
+    "id": "storyblok",
+    "slug": "storyblok",
+    "title": "Implementation Success Manager",
+    "subtitle": "Storyblok",
+    "summary": "Leading customer implementation success, connecting solution design, delivery partners, technical requirements and business outcomes across CMS implementations.",
+    "year": "Oct 2026 – Present",
     "tags": [
-      "Model",
-      "DAM"
+      "Implementation",
+      "CMS"
     ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
+    "sample": false,
     "facts": [],
-    "relations": {
-      "work": [
-        "dam-migration"
-      ]
-    },
-    "facets": {
-      "type": "Model"
-    },
-    "evidence": {
-      "kind": "schema",
-      "title": "Asset record",
-      "columns": [
-        "Field",
-        "Type",
-        "Purpose"
-      ],
-      "rows": [
-        [
-          "title",
-          "Required text",
-          "A name an editor can recognise"
-        ],
-        [
-          "assetType",
-          "Controlled term",
-          "Image, document, audio or video"
-        ],
-        [
-          "topics",
-          "References",
-          "Connect to the shared vocabulary"
-        ],
-        [
-          "owner",
-          "Person reference",
-          "Identify the responsible contact"
-        ],
-        [
-          "usageNotes",
-          "Text + source link",
-          "Record permitted use and its source"
-        ],
-        [
-          "reviewDate",
-          "Date",
-          "Prompt a usage and metadata check"
-        ],
-        [
-          "status",
-          "Draft / Approved / Archived",
-          "Show whether it can be used"
-        ]
-      ]
-    }
+    "relations": {},
+    "story": []
   },
   {
-    "collection": "artefacts",
-    "id": "migration-flow",
-    "slug": "migration-flow",
-    "title": "Migration checkpoints",
-    "subtitle": "Workflow / Asset library migration",
-    "summary": "A staged approach that finds problems while they are still small.",
-    "year": "To confirm",
+    "collection": "experience",
+    "id": "foolproof",
+    "slug": "foolproof",
+    "title": "Content Architect",
+    "subtitle": "Foolproof · Contract",
+    "summary": "Designed structured content systems for a digital insurance platform using Sanity CMS, supporting automated reporting and digital portal experiences. Defined content models, taxonomy and relationships between structured data and editorial content.",
+    "year": "2026",
     "tags": [
-      "Workflow",
-      "Migration"
-    ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
-    "facts": [],
-    "relations": {
-      "work": [
-        "dam-migration"
-      ]
-    },
-    "facets": {
-      "type": "Workflow"
-    },
-    "evidence": {
-      "kind": "workflow",
-      "title": "Migration workflow",
-      "rows": [
-        [
-          "01",
-          "Audit",
-          "Inventory files and identify duplicates."
-        ],
-        [
-          "02",
-          "Map",
-          "Connect old metadata to the new model."
-        ],
-        [
-          "03",
-          "Pilot",
-          "Test a representative batch with editors."
-        ],
-        [
-          "04",
-          "Validate",
-          "Check rights, owners and findability."
-        ],
-        [
-          "05",
-          "Release",
-          "Migrate in batches and document handover."
-        ]
-      ]
-    }
-  },
-  {
-    "collection": "artefacts",
-    "id": "governance-matrix",
-    "slug": "governance-matrix",
-    "title": "Decision ownership",
-    "subtitle": "Governance / Shared vocabulary",
-    "summary": "Who can change a term, a field, or whether an asset stays available.",
-    "year": "To confirm",
-    "tags": [
-      "Governance",
-      "Taxonomy"
-    ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
-    "facts": [],
-    "relations": {
-      "work": [
-        "dam-migration",
-        "shared-language"
-      ]
-    },
-    "facets": {
-      "type": "Governance"
-    },
-    "evidence": {
-      "kind": "table",
-      "title": "Decision ownership",
-      "columns": [
-        "Decision",
-        "Owner",
-        "Consulted"
-      ],
-      "rows": [
-        [
-          "Add a term",
-          "Content lead",
-          "Editors"
-        ],
-        [
-          "Change a field",
-          "Platform owner",
-          "Content lead"
-        ],
-        [
-          "Approve usage",
-          "Rights owner",
-          "Asset manager"
-        ],
-        [
-          "Archive content",
-          "Record owner",
-          "Editorial lead"
-        ]
-      ]
-    }
-  },
-  {
-    "collection": "artefacts",
-    "id": "content-schema",
-    "slug": "content-schema",
-    "title": "Reusable record schema",
-    "subtitle": "Schema / Reusable content model",
-    "summary": "Records that stand on their own and link to each other by reference.",
-    "year": "To confirm",
-    "tags": [
-      "Schema",
+      "Sanity",
       "Content modelling"
     ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
+    "sample": false,
     "facts": [],
-    "relations": {
-      "work": [
-        "structured-content"
-      ]
-    },
-    "facets": {
-      "type": "Schema"
-    },
-    "evidence": {
-      "kind": "schema",
-      "title": "Project record",
-      "columns": [
-        "Field",
-        "Type",
-        "Relationship"
-      ],
-      "rows": [
-        [
-          "title",
-          "text",
-          "Public project name"
-        ],
-        [
-          "people",
-          "reference[]",
-          "People → projects"
-        ],
-        [
-          "topics",
-          "reference[]",
-          "Topics → related content"
-        ],
-        [
-          "assets",
-          "reference[]",
-          "Assets → usage rights"
-        ],
-        [
-          "channels",
-          "reference[]",
-          "Channels → delivery needs"
-        ],
-        [
-          "reviewDate",
-          "date",
-          "Review → accountable owner"
-        ]
-      ]
-    }
+    "relations": {},
+    "story": []
   },
   {
-    "collection": "artefacts",
-    "id": "editorial-flow",
-    "slug": "editorial-flow",
-    "title": "Request to release workflow",
-    "subtitle": "Workflow / Editorial request to release",
-    "summary": "Five stages, each with a clear next action.",
-    "year": "To confirm",
+    "collection": "experience",
+    "id": "lc-sound-consulting",
+    "slug": "lc-sound-consulting",
+    "title": "Independent Content & Platform Consultant",
+    "subtitle": "LC Sound Consulting Ltd",
+    "summary": "Delivered content architecture, CMS and DAM implementations, and content operations transformation for enterprise clients. Designed scalable content models, governance frameworks, migration strategies and publishing workflows across complex digital ecosystems.",
+    "year": "2022 – 2026",
     "tags": [
-      "Workflow",
+      "Consulting",
       "Governance"
     ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
+    "sample": false,
     "facts": [],
-    "relations": {
-      "work": [
-        "editorial-workflow"
-      ]
-    },
-    "facets": {
-      "type": "Workflow"
-    },
-    "evidence": {
-      "kind": "workflow",
-      "title": "Editorial workflow",
-      "rows": [
-        [
-          "01",
-          "Intake",
-          "Agree the audience, owner and need."
-        ],
-        [
-          "02",
-          "Draft",
-          "Create content against the agreed brief."
-        ],
-        [
-          "03",
-          "Review",
-          "Collect one consolidated round of feedback."
-        ],
-        [
-          "04",
-          "Approve",
-          "Check accuracy, accessibility and rights."
-        ],
-        [
-          "05",
-          "Publish",
-          "Release, verify and set a review date."
-        ]
-      ]
-    }
+    "relations": {},
+    "story": []
   },
   {
-    "collection": "artefacts",
-    "id": "editor-guide",
-    "slug": "editor-guide",
-    "title": "Contributor starter guide",
-    "subtitle": "Training / Editorial request to release",
-    "summary": "Task-based guidance for a new contributor’s first week.",
-    "year": "To confirm",
-    "tags": [
-      "Training",
-      "Workflow"
-    ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
-    "facts": [],
-    "relations": {
-      "work": [
-        "editorial-workflow"
-      ]
-    },
-    "facets": {
-      "type": "Training"
-    },
-    "evidence": {
-      "kind": "workflow",
-      "title": "Contributor walkthrough",
-      "rows": [
-        [
-          "01",
-          "Find your record",
-          "Search by title or filter by your team."
-        ],
-        [
-          "02",
-          "Check the owner",
-          "Confirm who can approve the change."
-        ],
-        [
-          "03",
-          "Work in context",
-          "Check linked assets and related records."
-        ],
-        [
-          "04",
-          "Request review",
-          "Explain what changed and what needs checking."
-        ]
-      ]
-    }
-  },
-  {
-    "collection": "artefacts",
-    "id": "audit-register",
-    "slug": "audit-register",
-    "title": "Content decision register",
-    "subtitle": "Register / Content inventory & decisions",
-    "summary": "Keep, improve, merge, retire or investigate, with the reason still on the row.",
-    "year": "To confirm",
-    "tags": [
-      "Audit",
-      "Content quality"
-    ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
-    "facts": [],
-    "relations": {
-      "work": [
-        "content-audit"
-      ]
-    },
-    "facets": {
-      "type": "Register"
-    },
-    "evidence": {
-      "kind": "table",
-      "title": "Audit decision criteria",
-      "columns": [
-        "Decision",
-        "Use when",
-        "Record alongside it"
-      ],
-      "rows": [
-        [
-          "Keep",
-          "Purpose, accuracy and ownership are clear",
-          "Review date and accountable owner"
-        ],
-        [
-          "Improve",
-          "The need remains but the content needs work",
-          "Specific issue, action and evidence"
-        ],
-        [
-          "Merge",
-          "Several records meet the same need",
-          "Destination record and references to update"
-        ],
-        [
-          "Retire",
-          "The content no longer serves a current need",
-          "Approval, replacement and retention decision"
-        ],
-        [
-          "Investigate",
-          "There is not enough evidence to decide",
-          "Question, contact and next checkpoint"
-        ]
-      ]
-    }
-  },
-  {
-    "collection": "artefacts",
-    "id": "rights-checklist",
-    "slug": "rights-checklist",
-    "title": "Asset usage checks",
-    "subtitle": "Governance / Asset rights & reuse",
-    "summary": "Checks that make gaps in usage information visible before an asset is reused.",
-    "year": "To confirm",
+    "collection": "experience",
+    "id": "publicis-contract",
+    "slug": "publicis-contract",
+    "title": "Associate Content Director / Content Architect",
+    "subtitle": "Publicis Sapient · Contract engagements",
+    "summary": "Led enterprise content and platform engagements spanning DAM discovery, solution architecture, requirements definition, CMS migrations and delivery governance.",
+    "year": "2025 – 2026",
     "tags": [
       "DAM",
-      "Rights"
+      "Content architecture"
     ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
+    "sample": false,
     "facts": [],
-    "relations": {
-      "work": [
-        "asset-rights"
-      ]
-    },
-    "facets": {
-      "type": "Governance"
-    },
-    "evidence": {
-      "kind": "table",
-      "title": "Usage check matrix",
-      "columns": [
-        "Check",
-        "Information needed",
-        "If unclear"
-      ],
-      "rows": [
-        [
-          "Source",
-          "Creator, supplier or original rights record",
-          "Ask the recorded owner"
-        ],
-        [
-          "Context",
-          "Permitted channels and uses",
-          "Hold the new use for review"
-        ],
-        [
-          "Timing",
-          "Any start, expiry or review date",
-          "Confirm current permission"
-        ],
-        [
-          "Attribution",
-          "Required credit and wording",
-          "Check the source terms"
-        ],
-        [
-          "Decision",
-          "Named approver and supporting record",
-          "Keep the asset unavailable for that use"
-        ]
-      ]
-    }
+    "relations": {},
+    "story": []
   },
   {
-    "collection": "artefacts",
-    "id": "authoring-guide",
-    "slug": "authoring-guide",
-    "title": "Authoring field guide",
-    "subtitle": "Guide / CMS authoring experience",
-    "summary": "A form specification linking each field to the decision it helps an editor make.",
-    "year": "To confirm",
+    "collection": "experience",
+    "id": "accenture-song",
+    "slug": "accenture-song",
+    "title": "Experience Transformation Manager, Content Strategy",
+    "subtitle": "Accenture Song",
+    "summary": "Led enterprise content transformation across financial services, life sciences and FMCG. Developed content architectures, global production models, metadata, governance and platform implementations for clients including Sandoz, Novartis, NatWest and Mars.",
+    "year": "2021 – 2025",
+    "tags": [
+      "Content strategy",
+      "Platforms"
+    ],
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "hogarth",
+    "slug": "hogarth",
+    "title": "Technical Content Strategist / Content Architect",
+    "subtitle": "Hogarth Worldwide",
+    "summary": "Designed modular content structures, governance and production workflows supporting Bayer’s global content operations and localisation.",
+    "year": "2020 – 2021",
+    "tags": [
+      "Content modelling",
+      "Workflow"
+    ],
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "publicis-early",
+    "slug": "publicis-early",
+    "title": "Content Strategist",
+    "subtitle": "Publicis Sapient",
+    "summary": "Delivered content strategy, information architecture and CMS transformation across financial services and enterprise websites, working with Contentful, Sitecore and structured content models.",
+    "year": "2019 – 2020",
     "tags": [
       "CMS",
-      "Authoring"
+      "Information architecture"
     ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
+    "sample": false,
     "facts": [],
-    "relations": {
-      "work": [
-        "authoring-experience"
-      ]
-    },
-    "facets": {
-      "type": "Guide"
-    },
-    "evidence": {
-      "kind": "table",
-      "title": "Editorial field behaviour",
-      "columns": [
-        "Field",
-        "Guidance",
-        "Acceptance check"
-      ],
-      "rows": [
-        [
-          "Title",
-          "Use the name a visitor will recognise",
-          "Present in the collection and document"
-        ],
-        [
-          "Summary",
-          "Explain the work in plain language",
-          "Visible before opening supporting evidence"
-        ],
-        [
-          "Contribution",
-          "Describe the person's own involvement",
-          "Distinguishes individual work from team work"
-        ],
-        [
-          "Evidence",
-          "Link the source that supports the description",
-          "Opens the correct, permitted material"
-        ],
-        [
-          "Internal notes",
-          "Record unresolved editorial questions",
-          "Excluded from the public description"
-        ]
-      ]
-    }
+    "relations": {},
+    "story": []
   },
   {
-    "collection": "artefacts",
-    "id": "release-checklist",
-    "slug": "release-checklist",
-    "title": "Content release checks",
-    "subtitle": "Checklist / Publishing readiness",
-    "summary": "A checklist for deciding whether a set of pages is ready to publish.",
-    "year": "To confirm",
+    "collection": "experience",
+    "id": "early-career",
+    "slug": "early-career",
+    "title": "Earlier experience",
+    "subtitle": "CNN / Turner Broadcasting · CBRE · Compelo · Cannes Lions · Guides for Brides · Holiday Lettings / TripAdvisor",
+    "summary": "Content, digital marketing and production roles across media, property and events.",
+    "year": "2012 – 2019",
     "tags": [
-      "QA",
-      "Publishing"
+      "Content",
+      "Digital"
     ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
+    "sample": false,
     "facts": [],
-    "relations": {
-      "work": [
-        "launch-readiness"
-      ]
-    },
-    "facets": {
-      "type": "Checklist"
-    },
-    "evidence": {
-      "kind": "workflow",
-      "title": "Release review",
-      "rows": [
-        [
-          "01",
-          "Confirm content",
-          "Check names, dates, descriptions and approval status."
-        ],
-        [
-          "02",
-          "Follow relationships",
-          "Open linked records and confirm they support the claim."
-        ],
-        [
-          "03",
-          "Check media",
-          "Inspect originals, alternatives, permissions and failure states."
-        ],
-        [
-          "04",
-          "Try it as a visitor",
-          "Try navigation, keyboard focus, mobile layout and contact routes."
-        ],
-        [
-          "05",
-          "Make the decision",
-          "Assign unresolved issues and record what may be published."
-        ]
-      ]
-    }
-  },
-  {
-    "collection": "artefacts",
-    "id": "handover-index",
-    "slug": "handover-index",
-    "title": "Maintenance handover index",
-    "subtitle": "Guide / Team knowledge handover",
-    "summary": "The regular tasks a new content owner has to do, and where to find the answer for each.",
-    "year": "To confirm",
-    "tags": [
-      "Training",
-      "Documentation"
-    ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
-    "facts": [],
-    "relations": {
-      "work": [
-        "knowledge-handover"
-      ]
-    },
-    "facets": {
-      "type": "Guide"
-    },
-    "evidence": {
-      "kind": "table",
-      "title": "Tasks and sources",
-      "columns": [
-        "Task",
-        "Source of truth",
-        "Completion check"
-      ],
-      "rows": [
-        [
-          "Update a record",
-          "Content model and field guide",
-          "Public view and linked references agree"
-        ],
-        [
-          "Resolve a blocked review",
-          "Workflow and decision register",
-          "Next action has an owner"
-        ],
-        [
-          "Add an asset",
-          "Metadata model and usage record",
-          "Source, ownership and usage are recorded"
-        ],
-        [
-          "Change a term",
-          "Vocabulary and governance rules",
-          "Synonyms and affected records are considered"
-        ],
-        [
-          "Maintain the guidance",
-          "Documentation owner and review date",
-          "Instructions match the current workflow"
-        ]
-      ]
-    }
-  },
-  {
-    "collection": "artefacts",
-    "id": "lifecycle-rules",
-    "slug": "lifecycle-rules",
-    "title": "Review and archive rules",
-    "subtitle": "Workflow / Review & retirement",
-    "summary": "A review loop that gives published records an owner and a way to retire them.",
-    "year": "To confirm",
-    "tags": [
-      "Lifecycle",
-      "Governance"
-    ],
-    "sample": true,
-    "artwork": {
-      "file": "evidence-placeholder.png",
-      "alt": ""
-    },
-    "facts": [],
-    "relations": {
-      "work": [
-        "content-lifecycle"
-      ]
-    },
-    "facets": {
-      "type": "Workflow"
-    },
-    "evidence": {
-      "kind": "workflow",
-      "title": "Content lifecycle",
-      "rows": [
-        [
-          "01",
-          "Assign",
-          "Record the owner, purpose and next review date."
-        ],
-        [
-          "02",
-          "Review",
-          "Check accuracy, usefulness and linked evidence."
-        ],
-        [
-          "03",
-          "Decide",
-          "Keep, improve, merge or retire, with a reason."
-        ],
-        [
-          "04",
-          "Resolve references",
-          "Update inbound links and identify a replacement where needed."
-        ],
-        [
-          "05",
-          "Retain the record",
-          "Preserve the decision and set the next applicable check."
-        ]
-      ]
-    }
+    "relations": {},
+    "story": []
   }
 ]
