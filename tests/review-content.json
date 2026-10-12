@@ -1,0 +1,1576 @@
+{
+  "description": "Frozen review examples for application behavior contracts. Live content is independently validated against its schema, relationships and rendering.",
+  "content": {
+    "site.json": {
+      "author": "Livi Cracknell",
+      "siteUrl": "https://livi-cracknell.github.io/",
+      "entity": "LC Sound Consulting",
+      "email": "livicracknell91@gmail.com",
+      "footerNote": "Sample collection",
+      "identities": {
+        "production": {
+          "name": "Livi Cracknell",
+          "shortName": "Livi",
+          "captionPractice": "Content / Digital platforms",
+          "crumb": "Content",
+          "switchLabel": "Livi Cracknell",
+          "searchLabel": "Search projects",
+          "portraitLabel": "Provisional ASCII illustration of Livi, with a low bun and folded arms",
+          "otherIdentityLabel": "Meet Livicee",
+          "workLabel": "Projects",
+          "workCountLabel": "projects",
+          "status": "Available for Work",
+          "linkedin": "https://www.linkedin.com/",
+          "cvLabel": "Work"
+        },
+        "sound": {
+          "name": "Livicee",
+          "shortName": "Livicee",
+          "captionPractice": "Livicee / Sound",
+          "crumb": "Livicee",
+          "switchLabel": "DJ Livicee",
+          "searchLabel": "Search mixes",
+          "portraitLabel": "Provisional ASCII illustration of Livicee, with shoulder-length hair down, headphones and a loose high-neck muscle tank",
+          "otherIdentityLabel": "Meet Livi",
+          "workLabel": "Mixes",
+          "workCountLabel": "mixes",
+          "status": "Available for Bookings",
+          "soundcloud": "https://soundcloud.com/"
+        }
+      }
+    },
+    "copy.json": {
+      "production": {
+        "home": {
+          "title": "Content operations.<br>Digital platforms.",
+          "intro": "I'm Livi. I work with teams whose content is hard to find, hard to reuse, or risky to publish. The projects here are the models and workflows I use to get that under control.",
+          "selectedHeading": "Selected projects",
+          "contactLink": "Get in touch"
+        },
+        "about": {
+          "title": "About Livi.",
+          "lede": "Content operations, CMS, DAM and digital platforms.",
+          "body": "I work with editors to map how content moves, then leave a model and a workflow they can run without me.",
+          "principlesHeading": "How I work",
+          "principles": [
+            {
+              "title": "Start with the editors",
+              "body": "I sit with the people who publish and watch them do a real task before I change anything."
+            },
+            {
+              "title": "Name an owner",
+              "body": "Every record gets a person who can change it, a reason to exist and a way to retire it."
+            },
+            {
+              "title": "Leave it easy to run",
+              "body": "The next owner should be able to find the source of truth without calling me."
+            }
+          ],
+          "workLink": "My projects"
+        },
+        "contact": {
+          "title": "Get in touch.",
+          "lede": "Open to content operations and digital platform work.",
+          "subject": "Content & digital platform opportunity",
+          "emailAction": "Email Livi"
+        },
+        "cv": {
+          "title": "Work history."
+        }
+      },
+      "sound": {
+        "home": {
+          "title": "DJ sets.<br>Behind the decks.",
+          "intro": "Livicee is the DJ side of me. Five mixes, from the slow open to the wind-down.",
+          "selectedHeading": "Selected mixes",
+          "contactLink": "Bookings"
+        },
+        "about": {
+          "title": "About Livicee.",
+          "lede": "Livi Cracknell, behind the decks.",
+          "body": "Same person, different collection. I pick for the room first: the hour, who is there, how much space the music needs. Files go on when I have them to share.",
+          "principlesHeading": "How I pick",
+          "principles": [
+            {
+              "title": "Read the room",
+              "body": "The hour and who is there decide the record, not a genre label."
+            },
+            {
+              "title": "Leave room for a turn",
+              "body": "A set that only plays what people already know gets dull, so I keep a path open for something they didn’t expect."
+            },
+            {
+              "title": "Think in hours",
+              "body": "Each selection here is a stretch of the night and where it goes next."
+            }
+          ],
+          "workLink": "My mixes"
+        },
+        "contact": {
+          "title": "Book Livicee.",
+          "lede": "DJ bookings, events and collaborations.",
+          "subject": "Livicee booking enquiry",
+          "emailAction": "Email Livicee"
+        }
+      }
+    },
+    "notices.json": {
+      "relatedProjectsHeading": "Related projects"
+    },
+    "projects.json": [
+      {
+        "collection": "work",
+        "id": "dam-migration",
+        "slug": "dam-migration",
+        "title": "Asset library migration",
+        "subtitle": "Digital asset management",
+        "summary": "A messy shared drive turned into a library editors can search, with ownership and usage kept on each file.",
+        "year": "To confirm",
+        "tags": [
+          "DAM",
+          "Taxonomy",
+          "Migration"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Digital asset management"
+          },
+          {
+            "label": "For",
+            "value": "Content operations"
+          },
+          {
+            "label": "Output",
+            "value": "Metadata model, migration plan, ownership matrix"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "asset-model",
+            "migration-flow",
+            "governance-matrix"
+          ],
+          "experience": [
+            "content-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "How I approach a migration",
+            "body": "I start with a representative slice of the library, not the whole drive. Once we know what people search for, I map the old fields, run a pilot with editors, then move in batches so rights and owners aren’t lost on the way in."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "structured-content",
+        "slug": "structured-content",
+        "title": "Reusable content model",
+        "subtitle": "Content architecture",
+        "summary": "A model for content that shows up in more than one place, so editors change it once and the rest of the site stays in step.",
+        "year": "To confirm",
+        "tags": [
+          "CMS",
+          "Content modelling",
+          "Relationships"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Content modelling"
+          },
+          {
+            "label": "For",
+            "value": "Platforms & architecture"
+          },
+          {
+            "label": "Output",
+            "value": "Content schema, reference rules"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "content-schema"
+          ],
+          "experience": [
+            "platform-specialist"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Pulling content out of pages",
+            "body": "I take the parts that get reused (people, topics, assets) out of the page they live on and link them back in as references. I test it with an editing task: can someone update a name or a topic without hunting through six pages?"
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "editorial-workflow",
+        "slug": "editorial-workflow",
+        "title": "Editorial request to release",
+        "subtitle": "Workflow & enablement",
+        "summary": "A publishing path with an owner, one review round, and a clear publish check at the end.",
+        "year": "To confirm",
+        "tags": [
+          "Workflow",
+          "Governance",
+          "Training"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Publishing workflow"
+          },
+          {
+            "label": "For",
+            "value": "Editorial delivery"
+          },
+          {
+            "label": "Output",
+            "value": "Workflow map, contributor guide"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "editorial-flow",
+            "editor-guide"
+          ],
+          "experience": [
+            "editorial-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Where the delay was",
+            "body": "Most of the delay came from requests with no owner. I mapped where requests arrive, cut the states down, put feedback in one place and made the publish check explicit. The contributor guide uses the same words as the workflow, so onboarding isn’t a second system."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "shared-language",
+        "slug": "shared-language",
+        "title": "Shared vocabulary",
+        "subtitle": "Taxonomy & governance",
+        "summary": "The names people already use, written down so search, tags and navigation agree.",
+        "year": "To confirm",
+        "tags": [
+          "Taxonomy",
+          "Governance",
+          "Content modelling"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Taxonomy"
+          },
+          {
+            "label": "For",
+            "value": "Content operations"
+          },
+          {
+            "label": "Output",
+            "value": "Term rules, decision ownership"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "governance-matrix"
+          ],
+          "experience": [
+            "content-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Choosing the words and who owns them",
+            "body": "I compare labels, search terms and navigation, pick preferred names and useful synonyms, then name who can change a term. Without an owner, the vocabulary ends up forgotten in a spreadsheet."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "content-audit",
+        "slug": "content-audit",
+        "title": "Content inventory & decisions",
+        "subtitle": "Content quality",
+        "summary": "A register that turns a long list of pages into keep, improve, merge or retire, with the reason still on the row.",
+        "year": "To confirm",
+        "tags": [
+          "Audit",
+          "Content quality",
+          "Ownership"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Content audit"
+          },
+          {
+            "label": "For",
+            "value": "Platforms & architecture"
+          },
+          {
+            "label": "Output",
+            "value": "Audit register, decision criteria"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "audit-register"
+          ],
+          "experience": [
+            "platform-specialist"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Recording the decisions",
+            "body": "Purpose, audience, owner and condition go on the record before I recommend a change. If the evidence is missing, the row says so rather than marking the page as failed. Another editor can read the register and see why something was kept or cut."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "asset-rights",
+        "slug": "asset-rights",
+        "title": "Asset rights & reuse",
+        "subtitle": "Digital asset management",
+        "summary": "Usage rules that travel with the file, so an editor can see whether it is safe to drop into a new piece of work.",
+        "year": "To confirm",
+        "tags": [
+          "DAM",
+          "Rights",
+          "Governance"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Rights and reuse"
+          },
+          {
+            "label": "For",
+            "value": "Content operations"
+          },
+          {
+            "label": "Output",
+            "value": "Usage-check matrix, escalation path"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "rights-checklist"
+          ],
+          "experience": [
+            "content-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Showing what’s missing",
+            "body": "Permitted use, source, expiry and the responsible contact sit on the asset. If a field is empty, the editor has a next step instead of a guess, and unanswered rights questions stay open until someone owns them."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "authoring-experience",
+        "slug": "authoring-experience",
+        "title": "CMS authoring experience",
+        "subtitle": "Editorial interfaces",
+        "summary": "A content form ordered around the editor's task, with guidance and checks at the point they type.",
+        "year": "To confirm",
+        "tags": [
+          "CMS",
+          "Authoring",
+          "Content modelling"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Authoring experience"
+          },
+          {
+            "label": "For",
+            "value": "Platforms & architecture"
+          },
+          {
+            "label": "Output",
+            "value": "Field guide, editorial acceptance checks"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "authoring-guide"
+          ],
+          "experience": [
+            "platform-specialist"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Building the form around the task",
+            "body": "Fields follow the order an editor decides things in. Public copy is kept apart from internal notes, and validation is written in plain language. I test drafting, revising and handing over, not just whether the record saves."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "launch-readiness",
+        "slug": "launch-readiness",
+        "title": "Publishing readiness",
+        "subtitle": "Release assurance",
+        "summary": "A release check covering the content, its links and the path a visitor takes, as well as whether the build deployed.",
+        "year": "To confirm",
+        "tags": [
+          "QA",
+          "Publishing",
+          "Content quality"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Release review"
+          },
+          {
+            "label": "For",
+            "value": "Editorial delivery"
+          },
+          {
+            "label": "Output",
+            "value": "Release checklist, issue ownership"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "release-checklist"
+          ],
+          "experience": [
+            "editorial-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Checking before release",
+            "body": "Linked records, copy approval, media alternatives and contact routes get checked together. Anything still open has an owner and a release decision. A passing build doesn’t tell you whether the site works for a visitor, so someone uses it first."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "knowledge-handover",
+        "slug": "knowledge-handover",
+        "title": "Team knowledge handover",
+        "subtitle": "Documentation & enablement",
+        "summary": "Task-based documentation so the next owner can run the content system without a call to the last person who touched it.",
+        "year": "To confirm",
+        "tags": [
+          "Training",
+          "Documentation",
+          "Handover"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Handover"
+          },
+          {
+            "label": "For",
+            "value": "Editorial delivery"
+          },
+          {
+            "label": "Output",
+            "value": "Handover index, maintenance routine"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "handover-index"
+          ],
+          "experience": [
+            "editorial-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Writing the jobs",
+            "body": "I organise the guidance around the work a new owner has to do: update a record, unblock a review, find the right contact. Each task points to the source of truth, and someone is named to keep it up to date."
+          }
+        ]
+      },
+      {
+        "collection": "work",
+        "id": "content-lifecycle",
+        "slug": "content-lifecycle",
+        "title": "Review & retirement",
+        "subtitle": "Content maintenance",
+        "summary": "A review loop for published content, with a set way to archive it when it has done its job.",
+        "year": "To confirm",
+        "tags": [
+          "Lifecycle",
+          "Governance",
+          "Content quality"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Lifecycle"
+          },
+          {
+            "label": "For",
+            "value": "Content operations"
+          },
+          {
+            "label": "Output",
+            "value": "Lifecycle rules, review workflow"
+          }
+        ],
+        "relations": {
+          "artefacts": [
+            "lifecycle-rules"
+          ],
+          "experience": [
+            "content-operations"
+          ]
+        },
+        "story": [
+          {
+            "label": "Contribution",
+            "title": "Every record gets a review date",
+            "body": "Every live record gets an owner and a review date. Out of date, duplicated or unused content has a path to archive, and inbound links get checked before anything disappears. The reason stays on the record."
+          }
+        ]
+      }
+    ],
+    "evidence.json": [
+      {
+        "collection": "artefacts",
+        "id": "asset-model",
+        "slug": "asset-model",
+        "title": "Asset metadata model",
+        "subtitle": "Model / DAM migration",
+        "summary": "The fields that make an asset searchable and keep usage conditions on the record.",
+        "year": "To confirm",
+        "tags": [
+          "Model",
+          "DAM"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "dam-migration"
+          ]
+        },
+        "facets": {
+          "type": "Model"
+        },
+        "evidence": {
+          "kind": "schema",
+          "title": "Asset record",
+          "columns": [
+            "Field",
+            "Type",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "title",
+              "Required text",
+              "A name an editor can recognise"
+            ],
+            [
+              "assetType",
+              "Controlled term",
+              "Image, document, audio or video"
+            ],
+            [
+              "topics",
+              "References",
+              "Connect to the shared vocabulary"
+            ],
+            [
+              "owner",
+              "Person reference",
+              "Identify the responsible contact"
+            ],
+            [
+              "usageNotes",
+              "Text + source link",
+              "Record permitted use and its source"
+            ],
+            [
+              "reviewDate",
+              "Date",
+              "Prompt a usage and metadata check"
+            ],
+            [
+              "status",
+              "Draft / Approved / Archived",
+              "Show whether it can be used"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "migration-flow",
+        "slug": "migration-flow",
+        "title": "Migration checkpoints",
+        "subtitle": "Workflow / Asset library migration",
+        "summary": "A staged approach that finds problems while they are still small.",
+        "year": "To confirm",
+        "tags": [
+          "Workflow",
+          "Migration"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "dam-migration"
+          ]
+        },
+        "facets": {
+          "type": "Workflow"
+        },
+        "evidence": {
+          "kind": "workflow",
+          "title": "Migration workflow",
+          "rows": [
+            [
+              "01",
+              "Audit",
+              "Inventory files and identify duplicates."
+            ],
+            [
+              "02",
+              "Map",
+              "Connect old metadata to the new model."
+            ],
+            [
+              "03",
+              "Pilot",
+              "Test a representative batch with editors."
+            ],
+            [
+              "04",
+              "Validate",
+              "Check rights, owners and findability."
+            ],
+            [
+              "05",
+              "Release",
+              "Migrate in batches and document handover."
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "governance-matrix",
+        "slug": "governance-matrix",
+        "title": "Decision ownership",
+        "subtitle": "Governance / Shared vocabulary",
+        "summary": "Who can change a term, a field, or whether an asset stays available.",
+        "year": "To confirm",
+        "tags": [
+          "Governance",
+          "Taxonomy"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "dam-migration",
+            "shared-language"
+          ]
+        },
+        "facets": {
+          "type": "Governance"
+        },
+        "evidence": {
+          "kind": "table",
+          "title": "Decision ownership",
+          "columns": [
+            "Decision",
+            "Owner",
+            "Consulted"
+          ],
+          "rows": [
+            [
+              "Add a term",
+              "Content lead",
+              "Editors"
+            ],
+            [
+              "Change a field",
+              "Platform owner",
+              "Content lead"
+            ],
+            [
+              "Approve usage",
+              "Rights owner",
+              "Asset manager"
+            ],
+            [
+              "Archive content",
+              "Record owner",
+              "Editorial lead"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "content-schema",
+        "slug": "content-schema",
+        "title": "Reusable record schema",
+        "subtitle": "Schema / Reusable content model",
+        "summary": "Records that stand on their own and link to each other by reference.",
+        "year": "To confirm",
+        "tags": [
+          "Schema",
+          "Content modelling"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "structured-content"
+          ]
+        },
+        "facets": {
+          "type": "Schema"
+        },
+        "evidence": {
+          "kind": "schema",
+          "title": "Project record",
+          "columns": [
+            "Field",
+            "Type",
+            "Relationship"
+          ],
+          "rows": [
+            [
+              "title",
+              "text",
+              "Public project name"
+            ],
+            [
+              "people",
+              "reference[]",
+              "People → projects"
+            ],
+            [
+              "topics",
+              "reference[]",
+              "Topics → related content"
+            ],
+            [
+              "assets",
+              "reference[]",
+              "Assets → usage rights"
+            ],
+            [
+              "channels",
+              "reference[]",
+              "Channels → delivery needs"
+            ],
+            [
+              "reviewDate",
+              "date",
+              "Review → accountable owner"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "editorial-flow",
+        "slug": "editorial-flow",
+        "title": "Request to release workflow",
+        "subtitle": "Workflow / Editorial request to release",
+        "summary": "Five stages, each with a clear next action.",
+        "year": "To confirm",
+        "tags": [
+          "Workflow",
+          "Governance"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "editorial-workflow"
+          ]
+        },
+        "facets": {
+          "type": "Workflow"
+        },
+        "evidence": {
+          "kind": "workflow",
+          "title": "Editorial workflow",
+          "rows": [
+            [
+              "01",
+              "Intake",
+              "Agree the audience, owner and need."
+            ],
+            [
+              "02",
+              "Draft",
+              "Create content against the agreed brief."
+            ],
+            [
+              "03",
+              "Review",
+              "Collect one consolidated round of feedback."
+            ],
+            [
+              "04",
+              "Approve",
+              "Check accuracy, accessibility and rights."
+            ],
+            [
+              "05",
+              "Publish",
+              "Release, verify and set a review date."
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "editor-guide",
+        "slug": "editor-guide",
+        "title": "Contributor starter guide",
+        "subtitle": "Training / Editorial request to release",
+        "summary": "Task-based guidance for a new contributor’s first week.",
+        "year": "To confirm",
+        "tags": [
+          "Training",
+          "Workflow"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "editorial-workflow"
+          ]
+        },
+        "facets": {
+          "type": "Training"
+        },
+        "evidence": {
+          "kind": "workflow",
+          "title": "Contributor walkthrough",
+          "rows": [
+            [
+              "01",
+              "Find your record",
+              "Search by title or filter by your team."
+            ],
+            [
+              "02",
+              "Check the owner",
+              "Confirm who can approve the change."
+            ],
+            [
+              "03",
+              "Work in context",
+              "Check linked assets and related records."
+            ],
+            [
+              "04",
+              "Request review",
+              "Explain what changed and what needs checking."
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "audit-register",
+        "slug": "audit-register",
+        "title": "Content decision register",
+        "subtitle": "Register / Content inventory & decisions",
+        "summary": "Keep, improve, merge, retire or investigate, with the reason still on the row.",
+        "year": "To confirm",
+        "tags": [
+          "Audit",
+          "Content quality"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "content-audit"
+          ]
+        },
+        "facets": {
+          "type": "Register"
+        },
+        "evidence": {
+          "kind": "table",
+          "title": "Audit decision criteria",
+          "columns": [
+            "Decision",
+            "Use when",
+            "Record alongside it"
+          ],
+          "rows": [
+            [
+              "Keep",
+              "Purpose, accuracy and ownership are clear",
+              "Review date and accountable owner"
+            ],
+            [
+              "Improve",
+              "The need remains but the content needs work",
+              "Specific issue, action and evidence"
+            ],
+            [
+              "Merge",
+              "Several records meet the same need",
+              "Destination record and references to update"
+            ],
+            [
+              "Retire",
+              "The content no longer serves a current need",
+              "Approval, replacement and retention decision"
+            ],
+            [
+              "Investigate",
+              "There is not enough evidence to decide",
+              "Question, contact and next checkpoint"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "rights-checklist",
+        "slug": "rights-checklist",
+        "title": "Asset usage checks",
+        "subtitle": "Governance / Asset rights & reuse",
+        "summary": "Checks that make gaps in usage information visible before an asset is reused.",
+        "year": "To confirm",
+        "tags": [
+          "DAM",
+          "Rights"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "asset-rights"
+          ]
+        },
+        "facets": {
+          "type": "Governance"
+        },
+        "evidence": {
+          "kind": "table",
+          "title": "Usage check matrix",
+          "columns": [
+            "Check",
+            "Information needed",
+            "If unclear"
+          ],
+          "rows": [
+            [
+              "Source",
+              "Creator, supplier or original rights record",
+              "Ask the recorded owner"
+            ],
+            [
+              "Context",
+              "Permitted channels and uses",
+              "Hold the new use for review"
+            ],
+            [
+              "Timing",
+              "Any start, expiry or review date",
+              "Confirm current permission"
+            ],
+            [
+              "Attribution",
+              "Required credit and wording",
+              "Check the source terms"
+            ],
+            [
+              "Decision",
+              "Named approver and supporting record",
+              "Keep the asset unavailable for that use"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "authoring-guide",
+        "slug": "authoring-guide",
+        "title": "Authoring field guide",
+        "subtitle": "Guide / CMS authoring experience",
+        "summary": "A form specification linking each field to the decision it helps an editor make.",
+        "year": "To confirm",
+        "tags": [
+          "CMS",
+          "Authoring"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "authoring-experience"
+          ]
+        },
+        "facets": {
+          "type": "Guide"
+        },
+        "evidence": {
+          "kind": "table",
+          "title": "Editorial field behaviour",
+          "columns": [
+            "Field",
+            "Guidance",
+            "Acceptance check"
+          ],
+          "rows": [
+            [
+              "Title",
+              "Use the name a visitor will recognise",
+              "Present in the collection and document"
+            ],
+            [
+              "Summary",
+              "Explain the work in plain language",
+              "Visible before opening supporting evidence"
+            ],
+            [
+              "Contribution",
+              "Describe the person's own involvement",
+              "Distinguishes individual work from team work"
+            ],
+            [
+              "Evidence",
+              "Link the source that supports the description",
+              "Opens the correct, permitted material"
+            ],
+            [
+              "Internal notes",
+              "Record unresolved editorial questions",
+              "Excluded from the public description"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "release-checklist",
+        "slug": "release-checklist",
+        "title": "Content release checks",
+        "subtitle": "Checklist / Publishing readiness",
+        "summary": "A checklist for deciding whether a set of pages is ready to publish.",
+        "year": "To confirm",
+        "tags": [
+          "QA",
+          "Publishing"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "launch-readiness"
+          ]
+        },
+        "facets": {
+          "type": "Checklist"
+        },
+        "evidence": {
+          "kind": "workflow",
+          "title": "Release review",
+          "rows": [
+            [
+              "01",
+              "Confirm content",
+              "Check names, dates, descriptions and approval status."
+            ],
+            [
+              "02",
+              "Follow relationships",
+              "Open linked records and confirm they support the claim."
+            ],
+            [
+              "03",
+              "Check media",
+              "Inspect originals, alternatives, permissions and failure states."
+            ],
+            [
+              "04",
+              "Try it as a visitor",
+              "Try navigation, keyboard focus, mobile layout and contact routes."
+            ],
+            [
+              "05",
+              "Make the decision",
+              "Assign unresolved issues and record what may be published."
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "handover-index",
+        "slug": "handover-index",
+        "title": "Maintenance handover index",
+        "subtitle": "Guide / Team knowledge handover",
+        "summary": "The regular tasks a new content owner has to do, and where to find the answer for each.",
+        "year": "To confirm",
+        "tags": [
+          "Training",
+          "Documentation"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "knowledge-handover"
+          ]
+        },
+        "facets": {
+          "type": "Guide"
+        },
+        "evidence": {
+          "kind": "table",
+          "title": "Tasks and sources",
+          "columns": [
+            "Task",
+            "Source of truth",
+            "Completion check"
+          ],
+          "rows": [
+            [
+              "Update a record",
+              "Content model and field guide",
+              "Public view and linked references agree"
+            ],
+            [
+              "Resolve a blocked review",
+              "Workflow and decision register",
+              "Next action has an owner"
+            ],
+            [
+              "Add an asset",
+              "Metadata model and usage record",
+              "Source, ownership and usage are recorded"
+            ],
+            [
+              "Change a term",
+              "Vocabulary and governance rules",
+              "Synonyms and affected records are considered"
+            ],
+            [
+              "Maintain the guidance",
+              "Documentation owner and review date",
+              "Instructions match the current workflow"
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "artefacts",
+        "id": "lifecycle-rules",
+        "slug": "lifecycle-rules",
+        "title": "Review and archive rules",
+        "subtitle": "Workflow / Review & retirement",
+        "summary": "A review loop that gives published records an owner and a way to retire them.",
+        "year": "To confirm",
+        "tags": [
+          "Lifecycle",
+          "Governance"
+        ],
+        "sample": true,
+        "facts": [],
+        "relations": {
+          "work": [
+            "content-lifecycle"
+          ]
+        },
+        "facets": {
+          "type": "Workflow"
+        },
+        "evidence": {
+          "kind": "workflow",
+          "title": "Content lifecycle",
+          "rows": [
+            [
+              "01",
+              "Assign",
+              "Record the owner, purpose and next review date."
+            ],
+            [
+              "02",
+              "Review",
+              "Check accuracy, usefulness and linked evidence."
+            ],
+            [
+              "03",
+              "Decide",
+              "Keep, improve, merge or retire, with a reason."
+            ],
+            [
+              "04",
+              "Resolve references",
+              "Update inbound links and identify a replacement where needed."
+            ],
+            [
+              "05",
+              "Retain the record",
+              "Preserve the decision and set the next applicable check."
+            ]
+          ]
+        }
+      }
+    ],
+    "experience.json": [
+      {
+        "collection": "experience",
+        "id": "content-operations",
+        "slug": "content-operations",
+        "title": "Content & asset operations",
+        "subtitle": "DAM, vocabulary, rights, lifecycle",
+        "summary": "Keeping libraries searchable, terms agreed, usage visible, and published content on a review cycle.",
+        "year": "To confirm",
+        "tags": [
+          "DAM",
+          "Governance"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Operations after the model exists"
+          },
+          {
+            "label": "Covers",
+            "value": "Migration, taxonomy, rights, retirement"
+          }
+        ],
+        "relations": {
+          "work": [
+            "dam-migration",
+            "shared-language",
+            "asset-rights",
+            "content-lifecycle"
+          ]
+        },
+        "story": [
+          {
+            "label": "Practice",
+            "title": "The day-to-day of a library",
+            "body": "This is the work that continues after a DAM or vocabulary is stood up: who owns a file, what it can be used for, when it comes back for review."
+          }
+        ]
+      },
+      {
+        "collection": "experience",
+        "id": "platform-specialist",
+        "slug": "platform-specialist",
+        "title": "Content platforms & architecture",
+        "subtitle": "CMS models, authoring, audits",
+        "summary": "Reusable models, the forms editors type into, and the inventory that shows what to keep.",
+        "year": "To confirm",
+        "tags": [
+          "CMS",
+          "Content modelling"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "How the CMS is structured"
+          },
+          {
+            "label": "Covers",
+            "value": "Schema, authoring, content quality"
+          }
+        ],
+        "relations": {
+          "work": [
+            "structured-content",
+            "content-audit",
+            "authoring-experience"
+          ]
+        },
+        "story": [
+          {
+            "label": "Practice",
+            "title": "Fitting the platform to the task",
+            "body": "If the model and the form don’t match how people publish, they work around both. These projects are about that fit: records, references and checks at the point of entry."
+          }
+        ]
+      },
+      {
+        "collection": "experience",
+        "id": "editorial-operations",
+        "slug": "editorial-operations",
+        "title": "Editorial delivery & enablement",
+        "subtitle": "Workflow, release, handover",
+        "summary": "Getting work from request to live, then leaving the next owner able to run it without asking me.",
+        "year": "To confirm",
+        "tags": [
+          "Workflow",
+          "Training"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Focus",
+            "value": "Publishing and what happens after"
+          },
+          {
+            "label": "Covers",
+            "value": "Workflow, release checks, handover"
+          }
+        ],
+        "relations": {
+          "work": [
+            "editorial-workflow",
+            "launch-readiness",
+            "knowledge-handover"
+          ]
+        },
+        "story": [
+          {
+            "label": "Practice",
+            "title": "From request to live, then handover",
+            "body": "A workflow is only useful if it names an owner and a publish check. Handover is the same problem later: tasks, sources of truth, and who keeps the guidance current."
+          }
+        ]
+      }
+    ],
+    "mixes.json": [
+      {
+        "collection": "mixes",
+        "id": "after-hours",
+        "slug": "after-hours",
+        "title": "After hours",
+        "subtitle": "Deep house",
+        "summary": "Late-night deep house. Starts warm and open, then tightens once the floor is in.",
+        "year": "To confirm",
+        "tags": [
+          "Deep house",
+          "Late night"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Setting",
+            "value": "Late night"
+          },
+          {
+            "label": "Style",
+            "value": "Deep house"
+          },
+          {
+            "label": "Recording",
+            "value": "Not attached"
+          }
+        ],
+        "relations": {},
+        "night": "late",
+        "facets": {
+          "style": "Deep house"
+        },
+        "story": [
+          {
+            "label": "Listening notes",
+            "title": "When the room is already moving",
+            "body": "This is the stretch after people have arrived. Spacious at the front so it does not feel like a restart, then a more focused groove once the floor has a centre. File goes on when I have one to share."
+          }
+        ]
+      },
+      {
+        "collection": "mixes",
+        "id": "open-air",
+        "slug": "open-air",
+        "title": "Open air",
+        "subtitle": "House",
+        "summary": "Daytime house selection for outdoors and afternoons. Unhurried, so the rhythm takes its time.",
+        "year": "To confirm",
+        "tags": [
+          "House",
+          "Open air"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Setting",
+            "value": "Day / outdoor"
+          },
+          {
+            "label": "Style",
+            "value": "House"
+          },
+          {
+            "label": "Recording",
+            "value": "Not attached"
+          }
+        ],
+        "relations": {},
+        "night": "day",
+        "facets": {
+          "style": "House"
+        },
+        "story": [
+          {
+            "label": "Listening notes",
+            "title": "Outdoors and afternoons",
+            "body": "Outdoor or afternoon, you can’t pack the density you would at 1am. This selection stays open: house that can sit under conversation and still hold a floor if people want one."
+          }
+        ]
+      },
+      {
+        "collection": "mixes",
+        "id": "night-shift",
+        "slug": "night-shift",
+        "title": "Night shift",
+        "subtitle": "Electronic",
+        "summary": "Peak-hour electronic. Tighter pulse, a slow climb, less space between the hits.",
+        "year": "To confirm",
+        "tags": [
+          "Electronic",
+          "Late night"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Setting",
+            "value": "Peak / late"
+          },
+          {
+            "label": "Style",
+            "value": "Electronic"
+          },
+          {
+            "label": "Recording",
+            "value": "Not attached"
+          }
+        ],
+        "relations": {},
+        "night": "peak",
+        "facets": {
+          "style": "Electronic"
+        },
+        "story": [
+          {
+            "label": "Listening notes",
+            "title": "The driving stretch",
+            "body": "The kick is closer, the changes are smaller, and the energy is meant to hold rather than reset. I wouldn’t open a night with it."
+          }
+        ]
+      },
+      {
+        "collection": "mixes",
+        "id": "soft-focus",
+        "slug": "soft-focus",
+        "title": "Soft focus",
+        "subtitle": "Downtempo",
+        "summary": "A listening selection. Texture, space, and a quieter pace than the dancefloor records.",
+        "year": "To confirm",
+        "tags": [
+          "Downtempo",
+          "Listening"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Setting",
+            "value": "Listening / wind-down"
+          },
+          {
+            "label": "Style",
+            "value": "Downtempo"
+          },
+          {
+            "label": "Recording",
+            "value": "Not attached"
+          }
+        ],
+        "relations": {},
+        "night": "winddown",
+        "facets": {
+          "style": "Downtempo"
+        },
+        "story": [
+          {
+            "label": "Listening notes",
+            "title": "For bars and closing",
+            "body": "For a bar, the end of a night, or a room that wants records more than a set. The pace drops and the detail comes forward. It’s still a selection, not a playlist."
+          }
+        ]
+      },
+      {
+        "collection": "mixes",
+        "id": "first-light",
+        "slug": "first-light",
+        "title": "First light",
+        "subtitle": "Ambient",
+        "summary": "A slow open: sustained tones, long transitions, space between anything that resembles a beat.",
+        "year": "To confirm",
+        "tags": [
+          "Ambient",
+          "Opening"
+        ],
+        "sample": true,
+        "facts": [
+          {
+            "label": "Setting",
+            "value": "Open / early"
+          },
+          {
+            "label": "Style",
+            "value": "Ambient"
+          },
+          {
+            "label": "Recording",
+            "value": "Not attached"
+          }
+        ],
+        "relations": {},
+        "night": "early",
+        "facets": {
+          "style": "Ambient"
+        },
+        "story": [
+          {
+            "label": "Listening notes",
+            "title": "The first half hour",
+            "body": "Doors, early rooms, or the first half hour when you don’t want to force a groove. Tones hold the space, and the next selection can go anywhere from here."
+          }
+        ]
+      }
+    ]
+  }
+}
