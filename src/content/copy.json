@@ -2,7 +2,7 @@
   "production": {
     "home": {
       "title": "Content operations.<br>Digital platforms.",
-      "intro": "I'm Livi. I work with teams whose content is hard to find, hard to reuse, or risky to publish. The projects here are the models and workflows I use to get that under control.",
+      "intro": "I'm Livi. I help organisations bring structure, clarity and control to complex content ecosystems. From content architecture and governance to platforms and workflows, I build the foundations that make content easier to manage, reuse and scale.",
       "selectedHeading": "Selected projects",
       "contactLink": "Get in touch"
     },
@@ -45,22 +45,22 @@
       "contactLink": "Bookings"
     },
     "about": {
-      "title": "About Livicee.",
-      "lede": "Livi Cracknell, behind the decks.",
-      "body": "Same person, different collection. I pick for the room first: the hour, who is there, how much space the music needs. Files go on when I have them to share.",
-      "principlesHeading": "How I pick",
+      "title": "Open format.<br>Good instincts.",
+      "lede": "Great music, good energy and a feel for the room.",
+      "body": "I'm Livi, an open-format DJ who knows how to read a room, work a crowd and create the right energy for any occasion. From private parties and packed dancefloors to international brand events, I've played across London, Las Vegas, Copenhagen, Cannes, Lisbon, Singapore and Zurich. My sets have taken me to venues including Printworks, Poble Espanyol, Tivoli, Aquário Romano, the Cannes Croisette, Ace Hotel and Be At One. I've worked with clients and events including Google, Cannes Lions, Shoptalk, Money20/20, London Pride, Virgin Atlantic, Delta Air Lines and Silent Discos in Incredible Places. I play across genres and decades, combining crowd favourites with unexpected selections. Whether it's a hands-in-the-air moment or a carefully curated soundtrack, the music always serves the room.",
+      "principlesHeading": "What I do",
       "principles": [
         {
-          "title": "Read the room",
-          "body": "The hour and who is there decide the record, not a genre label."
+          "title": "Parties & celebrations",
+          "body": "Open-format DJ sets for birthdays, private parties and celebrations. Big singalongs, dancefloor favourites and unexpected tracks that make a night memorable."
         },
         {
-          "title": "Leave room for a turn",
-          "body": "A set that only plays what people already know gets dull, so I keep a path open for something they didn’t expect."
+          "title": "Weddings & events",
+          "body": "Music tailored to the occasion, from relaxed receptions and stylish gatherings to full dancefloors. Thoughtful selections, seamless transitions and the flexibility to follow the crowd."
         },
         {
-          "title": "Think in hours",
-          "body": "Each selection here is a stretch of the night and where it goes next."
+          "title": "Corporate events & sound programming",
+          "body": "Curated soundtracks for brand experiences, launches and corporate events, including walk-on music, event openings, transitions and bespoke music programming."
         }
       ],
       "workLink": "My mixes"
