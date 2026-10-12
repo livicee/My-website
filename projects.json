@@ -1,0 +1,175 @@
+[
+  {
+    "collection": "work",
+    "id": "life-insurance-headless-migration",
+    "slug": "life-insurance-headless-migration",
+    "title": "Sitecore to Strapi: headless content architecture",
+    "subtitle": "Life insurance client · Publicis Sapient",
+    "summary": "Content architecture for a Sitecore-to-Strapi migration, defining the information architecture, structured content model and reusable templates and components.",
+    "year": "March–June 2026",
+    "tags": [
+      "CMS",
+      "Content modelling",
+      "Information architecture"
+    ],
+    "sample": false,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Client",
+        "value": "Life insurance client, via Publicis Sapient"
+      },
+      {
+        "label": "Role",
+        "value": "Content Architect"
+      },
+      {
+        "label": "Platforms",
+        "value": "Sitecore → Strapi"
+      },
+      {
+        "label": "Output",
+        "value": "Sitemap, information architecture, content model, taxonomy and tagging strategy, template and component structure"
+      }
+    ],
+    "relations": {
+      "artefacts": []
+    },
+    "story": [
+      {
+        "label": "Context",
+        "title": "Moving to a headless CMS",
+        "body": "A life insurance client was migrating from Sitecore to Strapi and needed a content architecture that could support a scalable website."
+      },
+      {
+        "label": "My role",
+        "title": "Shaping the structure behind the site",
+        "body": "As Content Architect, I worked with the marketing lead to define the sitemap, information architecture, content model, taxonomy and tagging strategy. I partnered with UX and developers to translate these into reusable templates and components."
+      },
+      {
+        "label": "Outcome",
+        "title": "A scalable foundation in Strapi",
+        "body": "The result was a website powered by a headless CMS, with structured content and reusable components designed to support future growth."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "maybourne-library",
+    "slug": "maybourne-library",
+    "title": "The Maybourne Library: DAM implementation",
+    "subtitle": "Maybourne · Bynder",
+    "summary": "Bynder implementation and automated migration of 8,000+ assets, supported by asset classification, taxonomy and team onboarding.",
+    "year": "April–December 2025",
+    "tags": [
+      "DAM",
+      "Taxonomy",
+      "Migration",
+      "Change management"
+    ],
+    "sample": false,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Client",
+        "value": "Maybourne"
+      },
+      {
+        "label": "Focus",
+        "value": "DAM implementation, migration and adoption"
+      },
+      {
+        "label": "Platform",
+        "value": "Bynder"
+      },
+      {
+        "label": "Output",
+        "value": "Classification of 8,000+ assets, taxonomy, automated migration, onboarding and change management"
+      }
+    ],
+    "relations": {
+      "artefacts": []
+    },
+    "story": [
+      {
+        "label": "Context",
+        "title": "Building The Maybourne Library",
+        "body": "Maybourne needed a digital asset management platform to bring more than 8,000 assets into a shared, structured library."
+      },
+      {
+        "label": "My role",
+        "title": "Making the library work for its teams",
+        "body": "My work covered Bynder implementation, asset classification, taxonomy and automated migration. I also supported user onboarding and change management to help teams adopt The Maybourne Library."
+      },
+      {
+        "label": "Outcome",
+        "title": "A connected asset library",
+        "body": "The Maybourne Library launched successfully, with assets migrated into Bynder and integrations connecting the DAM to CMS and CRM systems."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "insurance-report-automation",
+    "slug": "insurance-report-automation",
+    "title": "From annual reports to structured content",
+    "subtitle": "Insurance client · Foolproof",
+    "summary": "Content and domain modelling in Sanity to support automated annual report production and a scalable reporting workflow.",
+    "year": "December 2025–June 2026",
+    "tags": [
+      "CMS",
+      "Content modelling",
+      "Content operations",
+      "Automation"
+    ],
+    "sample": false,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Client",
+        "value": "Insurance client, via Foolproof"
+      },
+      {
+        "label": "Focus",
+        "value": "Content architecture and report automation"
+      },
+      {
+        "label": "Platform",
+        "value": "Sanity"
+      },
+      {
+        "label": "Output",
+        "value": "Domain model, content model, operational processes and user training"
+      }
+    ],
+    "relations": {
+      "artefacts": []
+    },
+    "story": [
+      {
+        "label": "Context",
+        "title": "Rethinking annual report production",
+        "body": "An insurance client wanted to automate annual print reports and improve the processes behind them, using a CMS and management portal to support production at scale."
+      },
+      {
+        "label": "My role",
+        "title": "Modelling the content and how it moves",
+        "body": "I worked across domain modelling, content modelling, content architecture and content operations, defining how report content would be structured and managed in Sanity and the wider reporting workflow."
+      },
+      {
+        "label": "Outcome",
+        "title": "A live reporting portal",
+        "body": "Sanity was successfully implemented, users were trained and the portal went live to enable the creation of client reports."
+      }
+    ]
+  }
+]

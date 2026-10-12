@@ -1,0 +1,42 @@
+/* Background reactions change colour at the reading gutter; Livi remains a separate pink portrait. */
+.identity-field {
+  --identity-reading-edge: var(--reading-width);
+  --identity-portrait-mask: linear-gradient(to right,
+    rgb(0 0 0 / 6%) max(0px, calc(var(--identity-reading-edge) - 28px)),
+    #000 calc(var(--identity-reading-edge) + 36px));
+  --identity-response-mask: linear-gradient(to right,
+    transparent max(0px, calc(var(--identity-reading-edge) - 20px)),
+    #000 calc(var(--identity-reading-edge) + 28px));
+  --identity-mono-mask: linear-gradient(to right,
+    #000 max(0px, calc(var(--identity-reading-edge) - 20px)),
+    transparent calc(var(--identity-reading-edge) + 28px));
+  position: fixed; top: var(--header-height); right: var(--frame-return); bottom: calc(var(--footer-height) + var(--shell-bottom, 0px)); left: var(--nav); z-index: var(--z-field); margin: 0; border-radius: 3px; overflow: hidden; pointer-events: none;
+}
+.identity-field canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; visibility: hidden; }
+.identity-field.identity-ready canvas { visibility: visible; }
+.identity-field #identity-grid { mask-image: var(--identity-portrait-mask); }
+.identity-field .identity-response { mask-image: var(--identity-response-mask); }
+.identity-field .identity-mono { filter: grayscale(1) brightness(.34); mask-image: var(--identity-mono-mask); }
+.workspace:has(.has-record) .identity-field { --identity-reading-edge: min(calc(920px + var(--composition-inset)), calc(100vw - var(--nav) - var(--composition-inset))); }
+.identity-fallback { position: absolute; right: 5%; top: 30%; max-width: 260px; font-size: 46px; line-height: 1; letter-spacing: -.04em; color: #996583; }
+.identity-ready .identity-fallback { display: none; }
+@media (width <= 760px) {
+  .identity-field {
+    border-radius: 0;
+    --identity-figure-width: 430px; --identity-figure-top: 14px;
+    --identity-portrait-mask: linear-gradient(to bottom,
+      #000 max(0px, calc(var(--identity-reading-top, 280px) - 40px)),
+      rgb(0 0 0 / 4%) max(0px, var(--identity-reading-top, 280px)));
+    --identity-response-mask: linear-gradient(to bottom,
+      #000 max(0px, calc(var(--identity-reading-top, 280px) - 40px)),
+      transparent max(0px, var(--identity-reading-top, 280px)));
+    --identity-mono-mask: linear-gradient(to bottom,
+      transparent max(0px, calc(var(--identity-reading-top, 280px) - 40px)),
+      #000 max(0px, var(--identity-reading-top, 280px)));
+  }
+  /* Keep the shared lattice and canvas geometry, exposing the portrait and its label on Home only. */
+  .workspace:not(:has(.home-page)) .workspace-body > aside,
+  .workspace:not(:has(.home-page)) .identity-field :is(#identity-grid, .identity-response, .identity-mono, .identity-fallback) {
+    visibility: hidden;
+  }
+}

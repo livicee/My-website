@@ -55,6 +55,24 @@ git archive --format=zip -o livi-portfolio.zip HEAD
 
 This includes only the project's tracked files, `.github` included. It leaves out commit history, `node_modules`, `dist` and every ignored local folder. Livi's repository starts with fresh history from her first commit. Run `npm run build` first to confirm the files build.
 
+## Neon pink title standard — 12 October 2026
+
+Experience job titles, project titles and mix names now use neon pink. This includes cards, mix listings, Overview mixes, record indexes, record page headings and the persistent player title. Hover and selection feedback is retained. Styles are in `src/workspace/workspace.css`, `cards.css`, `expression.css` and `player.css`.
+
+## Professional Overview update — 12 October 2026
+
+The Livi Overview headline is now “Complex content. / Made manageable.” with a shorter introduction. All two-line page titles use the existing neon pink token for their second line, including both Overview and About pages. Update `src/content/copy.json`, `src/workspace/pages.ts` and `src/workspace/expression.css` together.
+
+## DJ About formatting — 12 October 2026
+
+About body copy now renders separate paragraphs, `##` section headings, `**bold**` names and phrases, and `_emphasis_` for locations. The changes are in `src/content/copy.json`, `src/workspace/pages.ts` and `src/workspace/workspace.css`. All three files must be updated together. The earlier Projects repair remains included.
+
+## Project content update — 12 October 2026
+
+The Projects collection now contains three confirmed projects: Sitecore to Strapi (life insurance client via Publicis Sapient, March–June 2026), The Maybourne Library (April–December 2025), and annual report automation (insurance client via Foolproof, December 2025–June 2026). Both insurance clients remain anonymous. Project copy is in `src/content/projects.json`; replace the entire file when uploading an update. It must include the closing brackets and all three records.
+
+The old sample evidence records have been removed because they referenced the replaced sample projects and no project evidence has been supplied. Project images retain the existing placeholder. Other site content is unchanged. The older sample inventory below describes the original handover and is superseded for Projects and Evidence by this update.
+
 ## What Livi must replace or approve
 
 Every record below carries `"sample": true` and stays that way until Livi confirms its replacement content. Then set that record's `sample` to `false`. The footer's **Sample collection** (`footerNote` in `site.json`) stays until all of them are confirmed. No metrics, dates or claims have been invented. Unknown years read `To confirm`.

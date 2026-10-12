@@ -1,0 +1,15 @@
+/*
+ * The rail's middle: a hairline under the last top option, then an ASCII field that fills the whole gap down to the
+ * hairline above the foot group (Contact, SoundCloud). The field is drawn by railField.ts.
+ */
+.rail-art { display: none; }
+
+@media (width > 760px) {
+  .rail-art { position: relative; flex: 1; min-height: 0; display: block; margin: 14px 0; pointer-events: none; }
+  .rail-art::before { content: ''; position: absolute; top: 0; left: 16px; right: 16px; height: 1px; background: var(--frame-edge); }
+  .rail-field { position: absolute; inset: 1px 0 0; display: block; width: 100%; height: calc(100% - 1px); }
+}
+@media (width > 760px) and (height < 560px) {
+  /* Too short to draw in: only the rule remains. */
+  .rail-field { display: none; }
+}

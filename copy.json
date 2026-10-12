@@ -1,0 +1,75 @@
+{
+  "production": {
+    "home": {
+      "title": "Complex content.<br>Made manageable.",
+      "intro": "I'm Livi. I turn complex content into systems people can use. From content models and taxonomy to CMS, DAM and migration, I connect the structure, platforms and workflows that keep content moving.",
+      "selectedHeading": "Selected projects",
+      "contactLink": "Get in touch"
+    },
+    "about": {
+      "title": "A systems mind.<br>Built for complexity.",
+      "lede": "Making complex content ecosystems simpler, smarter and easier to manage.",
+      "body": "I work at the intersection of people, platforms and processes, helping organisations get more from their content and the technology behind it.\n\nFrom content architecture and CMS implementation to DAM, governance and workflows, I connect the moving parts and build solutions that work in practice, not just on paper.",
+      "principlesHeading": "How I work",
+      "principles": [
+        {
+          "title": "People before platforms",
+          "body": "Technology is only as good as the people using it. I start by understanding the challenges, the users and what actually needs to change."
+        },
+        {
+          "title": "Make complexity manageable",
+          "body": "I connect the dots between content, technology and teams, turning complicated requirements into clear structures and practical solutions."
+        },
+        {
+          "title": "Build for what comes next",
+          "body": "Good solutions shouldn't depend on the person who designed them. I focus on creating scalable, sustainable ways of working that last beyond implementation."
+        }
+      ],
+      "workLink": "My projects"
+    },
+    "contact": {
+      "title": "Get in touch.",
+      "lede": "For content operations and digital platform enquiries.",
+      "subject": "Content & digital platform enquiry",
+      "emailAction": "Email Livi"
+    },
+    "cv": {
+      "title": "Experience."
+    }
+  },
+  "sound": {
+    "home": {
+      "title": "Open format.<br>Full energy.",
+      "intro": "From intimate parties to international stages. Good music, great crowds and no two sets the same.",
+      "selectedHeading": "Selected mixes",
+      "contactLink": "Bookings"
+    },
+    "about": {
+      "title": "Open format.<br>Good instincts.",
+      "lede": "Great music, good energy and a feel for the room.",
+      "body": "I'm Livi, an **open-format DJ** with a love for great music, unexpected selections and **bringing people together on the dancefloor**.\n\nI've played everywhere from intimate private parties to packed dancefloors and international brand events, with sets taking me across _London_, _Las Vegas_, _Copenhagen_, _Cannes_, _Lisbon_, _Singapore_ and _Zurich_.\n\n## From iconic venues to international events\n\nAlong the way, I've played at **Printworks**, **Poble Espanyol**, **Tivoli**, **Aquário Romano**, **the Cannes Croisette**, **Ace Hotel** and **Be At One**.\n\nI’ve also worked with names including **Google**, **Cannes Lions**, **Shoptalk**, **Money20/20**, **London Pride**, **Virgin Atlantic**, **Delta Air Lines** and **Silent Discos in Incredible Places**.\n\n## No fixed formula. No predictable playlists.\n\nMy sets move across genres and decades, mixing familiar favourites with tracks you didn't know you needed to hear.\n\nWhether I'm building the energy of a packed dancefloor or creating the soundtrack to something more intimate, it's always about finding **the right music for the right moment**.",
+      "principlesHeading": "What I do",
+      "principles": [
+        {
+          "title": "Parties & celebrations",
+          "body": "Open-format DJ sets for birthdays, private parties and celebrations. Big singalongs, dancefloor favourites and unexpected tracks that make a night memorable."
+        },
+        {
+          "title": "Weddings & events",
+          "body": "Music tailored to the occasion, from relaxed receptions and stylish gatherings to full dancefloors. Thoughtful selections, seamless transitions and the flexibility to follow the crowd."
+        },
+        {
+          "title": "Corporate events & sound programming",
+          "body": "Curated soundtracks for brand experiences, launches and corporate events, including walk-on music, event openings, transitions and bespoke music programming."
+        }
+      ],
+      "workLink": "My mixes"
+    },
+    "contact": {
+      "title": "Book Livicee.",
+      "lede": "DJ bookings, events and collaborations.",
+      "subject": "Livicee booking enquiry",
+      "emailAction": "Email Livicee"
+    }
+  }
+}
