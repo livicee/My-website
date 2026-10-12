@@ -1,0 +1,75 @@
+{
+  "production": {
+    "home": {
+      "title": "Content operations.<br>Digital platforms.",
+      "intro": "I'm Livi. I work with teams whose content is hard to find, hard to reuse, or risky to publish. The projects here are the models and workflows I use to get that under control.",
+      "selectedHeading": "Selected projects",
+      "contactLink": "Get in touch"
+    },
+    "about": {
+      "title": "A systems mind,<br>a human touch.",
+      "lede": "Content operations, CMS, DAM and digital platforms.",
+      "body": "I work with editors to map how content moves, then leave a model and a workflow they can run without me.",
+      "principlesHeading": "How I work",
+      "principles": [
+        {
+          "title": "Start with the editors",
+          "body": "I sit with the people who publish and watch them do a real task before I change anything."
+        },
+        {
+          "title": "Name an owner",
+          "body": "Every record gets a person who can change it, a reason to exist and a way to retire it."
+        },
+        {
+          "title": "Leave it easy to run",
+          "body": "The next owner should be able to find the source of truth without calling me."
+        }
+      ],
+      "workLink": "My projects"
+    },
+    "contact": {
+      "title": "Get in touch.",
+      "lede": "For content operations and digital platform enquiries.",
+      "subject": "Content & digital platform enquiry",
+      "emailAction": "Email Livi"
+    },
+    "cv": {
+      "title": "Experience."
+    }
+  },
+  "sound": {
+    "home": {
+      "title": "DJ sets.<br>Behind the decks.",
+      "intro": "Livicee is the DJ side of me. Five mixes, from the slow open to the wind-down.",
+      "selectedHeading": "Selected mixes",
+      "contactLink": "Bookings"
+    },
+    "about": {
+      "title": "About Livicee.",
+      "lede": "Livi Cracknell, behind the decks.",
+      "body": "Same person, different collection. I pick for the room first: the hour, who is there, how much space the music needs. Files go on when I have them to share.",
+      "principlesHeading": "How I pick",
+      "principles": [
+        {
+          "title": "Read the room",
+          "body": "The hour and who is there decide the record, not a genre label."
+        },
+        {
+          "title": "Leave room for a turn",
+          "body": "A set that only plays what people already know gets dull, so I keep a path open for something they didn’t expect."
+        },
+        {
+          "title": "Think in hours",
+          "body": "Each selection here is a stretch of the night and where it goes next."
+        }
+      ],
+      "workLink": "My mixes"
+    },
+    "contact": {
+      "title": "Book Livicee.",
+      "lede": "DJ bookings, events and collaborations.",
+      "subject": "Livicee booking enquiry",
+      "emailAction": "Email Livicee"
+    }
+  }
+}

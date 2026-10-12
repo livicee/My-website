@@ -1,0 +1,475 @@
+[
+  {
+    "collection": "work",
+    "id": "dam-migration",
+    "slug": "dam-migration",
+    "title": "Asset library migration",
+    "subtitle": "Digital asset management",
+    "summary": "A messy shared drive turned into a library editors can search, with ownership and usage kept on each file.",
+    "year": "To confirm",
+    "tags": [
+      "DAM",
+      "Content modelling"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Digital asset management"
+      },
+      {
+        "label": "For",
+        "value": "Content operations"
+      },
+      {
+        "label": "Output",
+        "value": "Metadata model, migration plan, ownership matrix"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "asset-model",
+        "migration-flow",
+        "governance-matrix"
+      ],
+      "experience": [
+        "content-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "How I approach a migration",
+        "body": "I start with a representative slice of the library, not the whole drive. Once we know what people search for, I map the old fields, run a pilot with editors, then move in batches so rights and owners aren’t lost on the way in."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "structured-content",
+    "slug": "structured-content",
+    "title": "Reusable content model",
+    "subtitle": "Content architecture",
+    "summary": "A model for content that shows up in more than one place, so editors change it once and the rest of the site stays in step.",
+    "year": "To confirm",
+    "tags": [
+      "CMS",
+      "Content modelling"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Content modelling"
+      },
+      {
+        "label": "For",
+        "value": "Platforms & architecture"
+      },
+      {
+        "label": "Output",
+        "value": "Content schema, reference rules"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "content-schema"
+      ],
+      "experience": [
+        "platform-specialist"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Pulling content out of pages",
+        "body": "I take the parts that get reused (people, topics, assets) out of the page they live on and link them back in as references. I test it with an editing task: can someone update a name or a topic without hunting through six pages?"
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "editorial-workflow",
+    "slug": "editorial-workflow",
+    "title": "Editorial request to release",
+    "subtitle": "Workflow & enablement",
+    "summary": "A publishing path with an owner, one review round, and a clear publish check at the end.",
+    "year": "To confirm",
+    "tags": [
+      "Workflow",
+      "Governance"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Publishing workflow"
+      },
+      {
+        "label": "For",
+        "value": "Editorial delivery"
+      },
+      {
+        "label": "Output",
+        "value": "Workflow map, contributor guide"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "editorial-flow",
+        "editor-guide"
+      ],
+      "experience": [
+        "editorial-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Where the delay was",
+        "body": "Most of the delay came from requests with no owner. I mapped where requests arrive, cut the states down, put feedback in one place and made the publish check explicit. The contributor guide uses the same words as the workflow, so onboarding isn’t a second system."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "shared-language",
+    "slug": "shared-language",
+    "title": "Shared vocabulary",
+    "subtitle": "Taxonomy & governance",
+    "summary": "The names people already use, written down so search, tags and navigation agree.",
+    "year": "To confirm",
+    "tags": [
+      "Content modelling",
+      "Governance"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Taxonomy"
+      },
+      {
+        "label": "For",
+        "value": "Content operations"
+      },
+      {
+        "label": "Output",
+        "value": "Term rules, decision ownership"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "governance-matrix"
+      ],
+      "experience": [
+        "content-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Choosing the words and who owns them",
+        "body": "I compare labels, search terms and navigation, pick preferred names and useful synonyms, then name who can change a term. Without an owner, the vocabulary ends up forgotten in a spreadsheet."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "content-audit",
+    "slug": "content-audit",
+    "title": "Content inventory & decisions",
+    "subtitle": "Content quality",
+    "summary": "A register that turns a long list of pages into keep, improve, merge or retire, with the reason still on the row.",
+    "year": "To confirm",
+    "tags": [
+      "Content quality",
+      "Governance"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Content audit"
+      },
+      {
+        "label": "For",
+        "value": "Platforms & architecture"
+      },
+      {
+        "label": "Output",
+        "value": "Audit register, decision criteria"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "audit-register"
+      ],
+      "experience": [
+        "platform-specialist"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Recording the decisions",
+        "body": "Purpose, audience, owner and condition go on the record before I recommend a change. If the evidence is missing, the row says so rather than marking the page as failed. Another editor can read the register and see why something was kept or cut."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "asset-rights",
+    "slug": "asset-rights",
+    "title": "Asset rights & reuse",
+    "subtitle": "Digital asset management",
+    "summary": "Usage rules that travel with the file, so an editor can see whether it is safe to drop into a new piece of work.",
+    "year": "To confirm",
+    "tags": [
+      "DAM",
+      "Governance"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Rights and reuse"
+      },
+      {
+        "label": "For",
+        "value": "Content operations"
+      },
+      {
+        "label": "Output",
+        "value": "Usage-check matrix, escalation path"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "rights-checklist"
+      ],
+      "experience": [
+        "content-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Showing what’s missing",
+        "body": "Permitted use, source, expiry and the responsible contact sit on the asset. If a field is empty, the editor has a next step instead of a guess, and unanswered rights questions stay open until someone owns them."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "authoring-experience",
+    "slug": "authoring-experience",
+    "title": "CMS authoring experience",
+    "subtitle": "Editorial interfaces",
+    "summary": "A content form ordered around the editor's task, with guidance and checks at the point they type.",
+    "year": "To confirm",
+    "tags": [
+      "CMS",
+      "Workflow"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Authoring experience"
+      },
+      {
+        "label": "For",
+        "value": "Platforms & architecture"
+      },
+      {
+        "label": "Output",
+        "value": "Field guide, editorial acceptance checks"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "authoring-guide"
+      ],
+      "experience": [
+        "platform-specialist"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Building the form around the task",
+        "body": "Fields follow the order an editor decides things in. Public copy is kept apart from internal notes, and validation is written in plain language. I test drafting, revising and handing over, not just whether the record saves."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "launch-readiness",
+    "slug": "launch-readiness",
+    "title": "Publishing readiness",
+    "subtitle": "Release assurance",
+    "summary": "A release check covering the content, its links and the path a visitor takes, as well as whether the build deployed.",
+    "year": "To confirm",
+    "tags": [
+      "Content quality",
+      "Workflow"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Release review"
+      },
+      {
+        "label": "For",
+        "value": "Editorial delivery"
+      },
+      {
+        "label": "Output",
+        "value": "Release checklist, issue ownership"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "release-checklist"
+      ],
+      "experience": [
+        "editorial-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Checking before release",
+        "body": "Linked records, copy approval, media alternatives and contact routes get checked together. Anything still open has an owner and a release decision. A passing build doesn’t tell you whether the site works for a visitor, so someone uses it first."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "knowledge-handover",
+    "slug": "knowledge-handover",
+    "title": "Team knowledge handover",
+    "subtitle": "Documentation & enablement",
+    "summary": "Task-based documentation so the next owner can run the content system without a call to the last person who touched it.",
+    "year": "To confirm",
+    "tags": [
+      "Workflow",
+      "Governance"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Handover"
+      },
+      {
+        "label": "For",
+        "value": "Editorial delivery"
+      },
+      {
+        "label": "Output",
+        "value": "Handover index, maintenance routine"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "handover-index"
+      ],
+      "experience": [
+        "editorial-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Writing the jobs",
+        "body": "I organise the guidance around the work a new owner has to do: update a record, unblock a review, find the right contact. Each task points to the source of truth, and someone is named to keep it up to date."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "content-lifecycle",
+    "slug": "content-lifecycle",
+    "title": "Review & retirement",
+    "subtitle": "Content maintenance",
+    "summary": "A review loop for published content, with a set way to archive it when it has done its job.",
+    "year": "To confirm",
+    "tags": [
+      "Content quality",
+      "Governance"
+    ],
+    "sample": true,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": ""
+    },
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Lifecycle"
+      },
+      {
+        "label": "For",
+        "value": "Content operations"
+      },
+      {
+        "label": "Output",
+        "value": "Lifecycle rules, review workflow"
+      }
+    ],
+    "relations": {
+      "artefacts": [
+        "lifecycle-rules"
+      ],
+      "experience": [
+        "content-operations"
+      ]
+    },
+    "story": [
+      {
+        "label": "Contribution",
+        "title": "Every record gets a review date",
+        "body": "Every live record gets an owner and a review date. Out of date, duplicated or unused content has a path to archive, and inbound links get checked before anything disappears. The reason stays on the record."
+      }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+/* One type system, with expression in Livicee's portrait and night map. */
+.home-intro h1 > span { display: block; }
+.profile-document > p, .story p { max-width: 65ch; }
+.record-facts, .crate-time, .crate-no, .count { font-variant-numeric: tabular-nums; }
+
+/* A painted row is the hit target. Titles stay steady while colour confirms the action. */
+.project-row, .overview-item, .crate-row, .set-mix, .index-record,
+.relation-row, .role-disclosure summary, .record-pagination a,
+.button, .query-chip, .filter-trigger, .text-link, .back-link, .clear-filters,
+.dialog-head button, .filter-group label {
+  transition: background-color var(--interaction-time) ease, color var(--interaction-time) ease, border-color var(--interaction-time) ease;
+}
+.project-row .row-title strong, .crate-title strong,
+.set-mix strong, .project-row > .icon, .overview-item > .icon,
+.set-mix > .icon, .relation-row > .icon { transition: color var(--interaction-time) ease, transform var(--interaction-time) ease; }
+.project-row:focus-visible, .overview-item:focus-visible, .crate-row:focus-visible,
+.set-mix:focus-visible, .relation-row:focus-visible, .role-disclosure summary:focus-visible,
+.record-pagination a:focus-visible { background: var(--row-hover); outline: 2px solid var(--pink); outline-offset: -2px; }
+.project-row:focus-visible .row-title strong,
+.crate-row:focus-visible .crate-title strong, .set-mix:focus-visible strong,
+.project-row:focus-visible > .icon, .overview-item:focus-visible > .icon,
+.set-mix:focus-visible > .icon { color: var(--selection-ink); }
+.button:active, .query-chip:active { background: var(--control-hover); }
+.button.primary:active { background: var(--selection-ink); color: var(--bg); }
+.query-chip:focus-visible, .button:focus-visible { outline-offset: 2px; }
+.filter-group label { padding: 4px 8px; }
+.filter-group label:has(:checked) { background: rgb(var(--pink-rgb) / 7%); }
+@media (hover: hover) {
+  .role-disclosure summary:hover { background: var(--row-hover); }
+  .project-row:hover .row-title strong, .crate-row:hover .crate-title strong,
+  .set-mix:hover strong, .project-row:hover > .icon, .overview-item:hover > .icon,
+  .set-mix:hover > .icon { color: var(--selection-ink); }
+  .text-link:hover, .back-link:hover, .clear-filters:hover { color: var(--selection-ink); text-decoration: underline; }
+  .dialog-head button:hover, .filter-group label:hover { background: var(--control-hover); }
+  .email-link:hover { color: var(--selection-ink); text-decoration: underline; text-underline-offset: 5px; }
+}
+
+/* Both identities share the same opening typography; Livicee retains its pink accent. */
+[data-dataset='sound'] { --row-hover: #251c24; --record-selected: #30242d; }
+[data-dataset='sound'] .home-intro h1 > span + span { color: var(--pink); }
+[data-dataset='sound'] .home-intro p { max-width: 54ch; }
+
+/* Shared, legible rows. The night map responds to the selected row without shifting its text. */
+.night-set { margin: 20px 0 24px; }
+.night-set .crate-ruler { margin-bottom: 0; font-size: var(--type-compact); }
+.night-set .set-stage { padding-top: 88px; }
+.night-set .set-chart { height: 72px; top: 8px; }
+.night-set .night-lit { fill-opacity: .12; }
+.night-set .night-lit-edge { stroke-opacity: .95; }
+.night-set .night-cut { stroke-width: 1; }
+.night-set .night-area { fill: transparent; }
+.night-set .set-mixes li { position: relative; }
+.night-set .set-mix { position: relative; display: grid; grid-template-columns: 78px minmax(0, 1fr) 20px; grid-template-areas: 'phase title arrow' '. style arrow'; gap: 4px 16px; align-items: center; }
+.night-set .set-mix strong { grid-area: title; font-size: 1.25rem; font-weight: 500; line-height: 1.3; letter-spacing: -.015em; }
+.night-set .set-style { display: block; grid-area: style; font-size: var(--type-meta); line-height: 1.5; }
+.set-phase { grid-area: phase; font: var(--type-compact)/1.4 var(--mono); color: var(--muted); }
+.set-mix > .icon { grid-area: arrow; color: var(--muted); width: 20px; height: 20px; }
+[data-dataset='sound'] .crate-row { padding: 20px 12px; }
+[data-dataset='sound'] .crate-summary { font-size: var(--type-detail); line-height: 1.5; }
+[data-dataset='sound'] .crate-title strong { font-size: 1.25rem; }
+[data-dataset='sound'] .night-svg.night-big { height: 92px; }
+@media (width <= 760px) {
+  .night-set .set-stage { padding-top: 80px; }
+  .night-set .set-chart { height: 64px; }
+  .night-set .set-mix { grid-template-columns: 58px minmax(0, 1fr) 18px; column-gap: 10px; }
+  .night-set .set-style { font-size: var(--type-compact); }
+  [data-dataset='sound'] .crate-row { padding-inline: 8px; }
+  .segment-control .query-chip { padding-inline: 10px; font-size: var(--type-compact); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workspace *, .filter-group label, .dialog-head button { transition: none !important; }
+}
+@media (forced-colors: active) {
+  .segment-control .query-chip[aria-pressed='true'] { outline: 2px solid Highlight; outline-offset: -2px; }
+}

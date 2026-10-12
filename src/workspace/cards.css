@@ -1,0 +1,145 @@
+/*
+ * Entries, as a CMS lists content: one raised card per record, with its own thumbnail and content-type tile,
+ * a mono field label, the title and summary, then tag chips. Sans carries what is read; mono labels what the system says.
+ */
+:root {
+  --card: #17161a;
+  --card-hover: #1d1b21;
+  --card-edge: #2f2b33;
+  --field: #121114;
+}
+
+.work-table, .overview-records { display: grid; gap: 12px; }
+.work-table { margin-top: 16px; }
+
+:is(a.project-row, a.overview-item) {
+  position: relative;
+  display: grid;
+  grid-template-columns: 184px minmax(0, 1fr);
+  gap: 18px;
+  padding: 14px 54px 14px 14px;
+  border: 1px solid var(--card-edge);
+  border-radius: 6px;
+  background: var(--card);
+  transition: border-color var(--interaction-time) ease, background-color var(--interaction-time) ease;
+}
+
+.entry-media {
+  position: relative;
+  /* Keeps its column's width and fills the card's height beside the text. */
+  align-self: stretch;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--field);
+}
+.entry-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+/* A supplied image fills the frame, cropped to it, as a cover does. */
+.entry-media img.entry-art { object-fit: cover; }
+.entry-type {
+  position: absolute;
+  z-index: 1;
+  top: 6px;
+  left: 6px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--card-edge);
+  border-radius: 3px;
+  background: rgb(17 17 19 / 90%);
+  color: var(--muted);
+}
+.entry-type .icon { width: 15px; height: 15px; }
+.entry-media:not(:has(img)) .entry-type { inset: 0; margin: auto; width: 40px; height: 40px; border-color: transparent; background: rgb(255 255 255 / 6%); }
+.entry-media:not(:has(img)) .entry-type .icon { width: 20px; height: 20px; }
+
+.entry-body { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.entry-eyebrow { margin-bottom: 6px; font: 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.entry-body .row-title { display: grid; gap: 4px; }
+/* 20px title under the 22px section headings, 16px detail summary: cards sit inside the page's type scale. */
+.entry-body .row-title strong { font-size: 20px; line-height: 1.25; font-weight: 600; letter-spacing: -.02em; color: var(--foreground); transition: color var(--interaction-time) ease; }
+.entry-body .row-title > span { font-size: 16px; line-height: 1.5; color: var(--muted); }
+.entry-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; width: 100%; margin-top: 10px; }
+.chip { font: 12px/1.4 var(--mono); color: var(--muted); white-space: nowrap; }
+.entry-count { position: absolute; z-index: 1; right: 6px; bottom: 6px; display: inline-flex; align-items: center; gap: 5px; padding: 4px 7px; border: 1px solid var(--card-edge); border-radius: 3px; background: rgb(17 17 19 / 90%); font: 12px/1 var(--mono); color: var(--text-soft); }
+.entry-count .icon { width: 13px; height: 13px; color: var(--muted); }
+
+:is(a.project-row, a.overview-item) > .icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+  transition: color var(--interaction-time) ease, transform var(--interaction-time) ease;
+}
+
+:is(a.project-row, a.overview-item):focus-visible { border-color: var(--pink); background: var(--card-hover); outline: 2px solid var(--pink); outline-offset: -2px; }
+:is(a.project-row, a.overview-item):focus-visible .row-title strong, :is(a.project-row, a.overview-item):focus-visible > .icon { color: var(--selection-ink); }
+@media (hover: hover) {
+  :is(a.project-row, a.overview-item):hover { border-color: rgb(var(--pink-rgb) / 60%); background: var(--card-hover); }
+  :is(a.project-row, a.overview-item):hover .row-title strong, :is(a.project-row, a.overview-item):hover > .icon { color: var(--selection-ink); }
+  :is(a.project-row, a.overview-item):hover > .icon { transform: translate(2px, -2px); }
+}
+
+@media (width <= 560px) {
+  :is(a.project-row, a.overview-item) { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 12px 12px 14px; }
+  .entry-media { aspect-ratio: 16 / 7; }
+  .record-pagination { grid-template-columns: minmax(0, 1fr); }
+  :is(a.project-row, a.overview-item) > .icon { top: auto; bottom: 14px; right: 14px; }
+  .entry-foot { padding-right: 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(a.project-row, a.overview-item):hover > .icon { transform: none; }
+}
+
+/* Documents: unboxed facts, underlined capability links, story cards and hairline-divided related rows. */
+.record-facts { gap: 20px 24px; margin: 24px 0 0; }
+.record-facts > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.record-facts dt, .capabilities h2, .story-label { font: 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.record-facts dt { margin-bottom: 6px; }
+.record-facts dd { color: var(--foreground); }
+.capabilities { margin-top: 28px; }
+.capabilities h2 { margin-bottom: 10px; }
+.capabilities .query-line { margin-top: 0; gap: 0 20px; }
+.capabilities a.query-chip { font: 400 14px/1.3 var(--mono); padding: 0; border: 0; background: none; color: var(--text-soft); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+@media (hover: hover) { .capabilities a.query-chip:hover { color: var(--pink); text-decoration-color: currentColor; } }
+.story-block { margin-top: 14px; padding: 18px 20px 20px; border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+.story-block h3 { margin: 8px 0 8px; font-size: 20px; font-weight: 600; letter-spacing: -.015em; }
+.story-block p { color: var(--text-soft); }
+
+.record-pagination a { border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+/* Related links are rows divided by a hairline, not boxed cards. */
+.relation-row { margin: 0 -12px; padding: 12px; gap: 14px; border-top: 1px solid var(--line); }
+.relation-row > .icon:first-child { box-sizing: content-box; width: 18px; height: 18px; padding: 7px; border-radius: 4px; background: rgb(255 255 255 / 5%); }
+.record-pagination { gap: 12px; }
+.record-pagination a { margin: 0; padding: 14px 16px; min-height: 64px; }
+@media (hover: hover) { .relation-row:hover { background: var(--card-hover); }
+  .record-pagination a:hover { border-color: rgb(var(--pink-rgb) / 60%); background: var(--card-hover); } }
+.evidence-preview-link { padding: 12px; border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+@media (hover: hover) { .evidence-preview-link:hover { border-color: rgb(var(--pink-rgb) / 60%); background: var(--card-hover); } }
+
+/* Experience restores the Pixel CV's open, numbered rows within the current reading surface. */
+.role-disclosure { border-bottom: 1px solid var(--line); }
+/* The number and chevron sit 12px inside the row's hover background. */
+.role-disclosure summary { padding: 28px 12px; }
+/* Starts under the title: 12px inset + the 2ch number (17px) + the summary's 20px gap. */
+.role-content { padding-inline: 49px 12px; }
+.principles > div:last-child { margin-bottom: 0; }
+.principles > div { margin-bottom: 12px; padding: 18px 20px 20px; border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+.contact-address { padding: 20px; border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+
+/* Column labels line up with the rows' content: their padding (expression.css) plus the 1px card border. */
+.crate-head { padding-inline: 13px; }
+@media (width <= 760px) { .crate-head { padding-inline: 9px; } }
+.crate-rows { display: grid; gap: 12px; }
+.crate-row { border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+@media (hover: hover) { .crate-row:hover { border-color: rgb(var(--pink-rgb) / 60%); background: var(--card-hover); } }
+
+/* Livicee's Overview: the mixes under the night chart are cards too. */
+.night-set .set-mixes li { margin-top: 12px; }
+.night-set .set-mix { padding: 16px 18px; border: 1px solid var(--card-edge); border-radius: 6px; background: var(--card); }
+@media (hover: hover) { .night-set .set-mix:hover { border-color: rgb(var(--pink-rgb) / 60%); background: var(--card-hover); } }
+.night-set .set-mix:focus-visible { border-color: var(--pink); background: var(--card-hover); }

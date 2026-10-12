@@ -1,0 +1,69 @@
+.evidence-preview {
+    margin: 0;
+}
+
+.evidence-preview-link {
+    display: block;
+    padding: 8px;
+    transition: background-color var(--interaction-time) ease;
+}
+.evidence-preview-link:focus-visible { outline-offset: -2px; background: var(--row-hover); }
+@media (hover: hover) { .evidence-preview-link:hover { background: var(--row-hover); } }
+
+.evidence-preview-media {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 10 / 7;
+    color: #f3eaf0;
+    background: #151419;
+}
+
+.evidence-preview-image {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+/* A supplied image (16:9, like the placeholders) fills a 16:9 frame; a generated diagram keeps 10:7. */
+.evidence-preview-media:has(.is-art) { aspect-ratio: 16 / 9; }
+.evidence-preview-image.is-art { object-fit: cover; }
+
+.evidence-preview-caption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px 16px;
+    margin-top: 12px;
+    color: #c4b8c1;
+    font-size: var(--type-meta);
+    line-height: 1.45;
+}
+
+.evidence-preview-caption > :last-child { color: #f3eaf0; }
+@media (hover: hover) { .evidence-preview-link:hover .evidence-preview-caption > :last-child { color: var(--pink); } }
+
+.evidence-preview-caption .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    vertical-align: -2px;
+}
+
+.evidence-preview-unavailable {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: #151419;
+    font-size: var(--type-body);
+    line-height: 1.5;
+    text-align: center;
+}

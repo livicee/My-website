@@ -1,0 +1,41 @@
+{
+  "author": "Livi Cracknell",
+  "siteUrl": "https://livi-cracknell.github.io/",
+  "searchTitle": "Livi Cracknell · Content & Sound",
+  "searchDescription": "Livi Cracknell: content operations and digital platforms. Also DJ Livicee.",
+  "entity": "LC Sound Consulting",
+  "email": "livicracknell91@gmail.com",
+  "footerNote": "Sample collection",
+  "identities": {
+    "production": {
+      "name": "Livi Cracknell",
+      "shortName": "Livi",
+      "captionPractice": "Content / Digital platforms",
+      "crumb": "Content",
+      "switchLabel": "Livi Cracknell",
+      "searchLabel": "Search projects",
+      "portraitLabel": "Provisional ASCII illustration of Livi, with a low bun and folded arms",
+      "otherIdentityLabel": "Meet Livicee",
+      "workLabel": "Projects",
+      "workCountLabel": "projects",
+      "status": "Currently: Implementation Success Manager @ Storyblok",
+      "linkedin": "https://www.linkedin.com/in/livi-cracknell/",
+      "cvLabel": "Experience"
+    },
+    "sound": {
+      "name": "Livicee",
+      "shortName": "Livicee",
+      "captionPractice": "Livicee / Sound",
+      "crumb": "Livicee",
+      "switchLabel": "DJ Livicee",
+      "searchLabel": "Search mixes",
+      "portraitLabel": "ASCII illustration of Livicee, with shoulder-length hair down, headphones and a loose high-neck muscle tank",
+      "otherIdentityLabel": "Meet Livi",
+      "workLabel": "Mixes",
+      "workCountLabel": "mixes",
+      "status": "Available for Bookings",
+      "soundcloud": "https://soundcloud.com/livicee",
+      "instagram": "https://instagram.com/livicee"
+    }
+  }
+}

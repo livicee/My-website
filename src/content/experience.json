@@ -1,0 +1,117 @@
+[
+  {
+    "collection": "experience",
+    "id": "content-operations",
+    "slug": "content-operations",
+    "title": "Content & asset operations",
+    "subtitle": "DAM, vocabulary, rights, lifecycle",
+    "summary": "Keeping libraries searchable, terms agreed, usage visible, and published content on a review cycle.",
+    "year": "To confirm",
+    "tags": [
+      "DAM",
+      "Governance"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Operations after the model exists"
+      },
+      {
+        "label": "Covers",
+        "value": "Migration, taxonomy, rights, retirement"
+      }
+    ],
+    "relations": {
+      "work": [
+        "dam-migration",
+        "shared-language",
+        "asset-rights",
+        "content-lifecycle"
+      ]
+    },
+    "story": [
+      {
+        "label": "Practice",
+        "title": "The day-to-day of a library",
+        "body": "This is the work that continues after a DAM or vocabulary is stood up: who owns a file, what it can be used for, when it comes back for review."
+      }
+    ]
+  },
+  {
+    "collection": "experience",
+    "id": "platform-specialist",
+    "slug": "platform-specialist",
+    "title": "Content platforms & architecture",
+    "subtitle": "CMS models, authoring, audits",
+    "summary": "Reusable models, the forms editors type into, and the inventory that shows what to keep.",
+    "year": "To confirm",
+    "tags": [
+      "CMS",
+      "Content modelling"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "How the CMS is structured"
+      },
+      {
+        "label": "Covers",
+        "value": "Schema, authoring, content quality"
+      }
+    ],
+    "relations": {
+      "work": [
+        "structured-content",
+        "content-audit",
+        "authoring-experience"
+      ]
+    },
+    "story": [
+      {
+        "label": "Practice",
+        "title": "Fitting the platform to the task",
+        "body": "If the model and the form don’t match how people publish, they work around both. These projects are about that fit: records, references and checks at the point of entry."
+      }
+    ]
+  },
+  {
+    "collection": "experience",
+    "id": "editorial-operations",
+    "slug": "editorial-operations",
+    "title": "Editorial delivery & enablement",
+    "subtitle": "Workflow, release, handover",
+    "summary": "Getting work from request to live, then leaving the next owner able to run it without asking me.",
+    "year": "To confirm",
+    "tags": [
+      "Workflow",
+      "Training"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Focus",
+        "value": "Publishing and what happens after"
+      },
+      {
+        "label": "Covers",
+        "value": "Workflow, release checks, handover"
+      }
+    ],
+    "relations": {
+      "work": [
+        "editorial-workflow",
+        "launch-readiness",
+        "knowledge-handover"
+      ]
+    },
+    "story": [
+      {
+        "label": "Practice",
+        "title": "From request to live, then handover",
+        "body": "A workflow is only useful if it names an owner and a publish check. Handover is the same problem later: tasks, sources of truth, and who keeps the guidance current."
+      }
+    ]
+  }
+]

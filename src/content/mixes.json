@@ -1,0 +1,187 @@
+[
+  {
+    "collection": "mixes",
+    "id": "after-hours",
+    "slug": "after-hours",
+    "title": "January Bluze (Pirate Studios mix)",
+    "subtitle": "R&B & soul",
+    "summary": "A 25-minute R&B and soul mix recorded at Pirate Studios.",
+    "year": "2019",
+    "tags": [
+      "R&B",
+      "Soul"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Setting",
+        "value": "Late night"
+      },
+      {
+        "label": "Style",
+        "value": "R&B & soul"
+      },
+      {
+        "label": "Recording",
+        "value": "SoundCloud"
+      }
+    ],
+    "relations": {},
+    "night": "late",
+    "facets": {
+      "style": "R&B & soul"
+    },
+    "audio": {
+      "link": "https://soundcloud.com/livicee/january-bluze-pirate-studios-mix",
+      "duration": 1505.6
+    }
+  },
+  {
+    "collection": "mixes",
+    "id": "open-air",
+    "slug": "open-air",
+    "title": "Neo Soul and Chill",
+    "subtitle": "Neo soul",
+    "summary": "A 48-minute neo soul and chill set, first played at a Saturday morning market.",
+    "year": "2018",
+    "tags": [
+      "Neo soul",
+      "Chill"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Setting",
+        "value": "Day / outdoor"
+      },
+      {
+        "label": "Style",
+        "value": "Neo soul"
+      },
+      {
+        "label": "Recording",
+        "value": "SoundCloud"
+      }
+    ],
+    "relations": {},
+    "night": "day",
+    "facets": {
+      "style": "Neo soul"
+    },
+    "audio": {
+      "link": "https://soundcloud.com/livicee/saturday-morning-market-may",
+      "duration": 2883.4
+    }
+  },
+  {
+    "collection": "mixes",
+    "id": "night-shift",
+    "slug": "night-shift",
+    "title": "Funky Edits - Nov 25",
+    "subtitle": "Disco edits",
+    "summary": "A 51-minute set of funky disco edits from November 2025.",
+    "year": "2025",
+    "tags": [
+      "Disco",
+      "Edits"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Setting",
+        "value": "Peak / late"
+      },
+      {
+        "label": "Style",
+        "value": "Disco edits"
+      },
+      {
+        "label": "Recording",
+        "value": "SoundCloud"
+      }
+    ],
+    "relations": {},
+    "night": "peak",
+    "facets": {
+      "style": "Disco edits"
+    },
+    "audio": {
+      "link": "https://soundcloud.com/livicee/funky-edits-nov-25",
+      "duration": 3088.1
+    }
+  },
+  {
+    "collection": "mixes",
+    "id": "soft-focus",
+    "slug": "soft-focus",
+    "title": "Disco for days",
+    "subtitle": "Nu-disco",
+    "summary": "A 29-minute set of disco edits, house and nu-disco.",
+    "year": "2018",
+    "tags": [
+      "Disco",
+      "Nu-disco"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Setting",
+        "value": "Listening / wind-down"
+      },
+      {
+        "label": "Style",
+        "value": "Nu-disco"
+      },
+      {
+        "label": "Recording",
+        "value": "SoundCloud"
+      }
+    ],
+    "relations": {},
+    "night": "winddown",
+    "facets": {
+      "style": "Nu-disco"
+    },
+    "audio": {
+      "link": "https://soundcloud.com/livicee/disco-for-days-1",
+      "duration": 1735.6
+    }
+  },
+  {
+    "collection": "mixes",
+    "id": "first-light",
+    "slug": "first-light",
+    "title": "Sounds from Ace Hotel lobby: Neo Soul Musings",
+    "subtitle": "Neo soul",
+    "summary": "A 34-minute neo soul set from the Ace Hotel lobby.",
+    "year": "2018",
+    "tags": [
+      "Neo soul",
+      "Lobby"
+    ],
+    "sample": true,
+    "facts": [
+      {
+        "label": "Setting",
+        "value": "Open / early"
+      },
+      {
+        "label": "Style",
+        "value": "Neo soul"
+      },
+      {
+        "label": "Recording",
+        "value": "SoundCloud"
+      }
+    ],
+    "relations": {},
+    "night": "early",
+    "facets": {
+      "style": "Neo soul"
+    },
+    "audio": {
+      "link": "https://soundcloud.com/livicee/ace-hotel-neo-soul-musings",
+      "duration": 2059.0
+    }
+  }
+]
