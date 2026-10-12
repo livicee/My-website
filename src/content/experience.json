@@ -1,117 +1,138 @@
 [
   {
     "collection": "experience",
-    "id": "content-operations",
-    "slug": "content-operations",
-    "title": "Content & asset operations",
-    "subtitle": "DAM, vocabulary, rights, lifecycle",
-    "summary": "Keeping libraries searchable, terms agreed, usage visible, and published content on a review cycle.",
-    "year": "To confirm",
+    "id": "storyblok",
+    "slug": "storyblok",
+    "title": "Implementation Success Manager",
+    "subtitle": "Storyblok",
+    "summary": "Leading customer implementation success, connecting solution design, delivery partners, technical requirements and business outcomes across CMS implementations.",
+    "year": "Oct 2026 – Present",
     "tags": [
-      "DAM",
-      "Governance"
+      "Implementation",
+      "CMS"
     ],
-    "sample": true,
-    "facts": [
-      {
-        "label": "Focus",
-        "value": "Operations after the model exists"
-      },
-      {
-        "label": "Covers",
-        "value": "Migration, taxonomy, rights, retirement"
-      }
-    ],
-    "relations": {
-      "work": [
-        "dam-migration",
-        "shared-language",
-        "asset-rights",
-        "content-lifecycle"
-      ]
-    },
-    "story": [
-      {
-        "label": "Practice",
-        "title": "The day-to-day of a library",
-        "body": "This is the work that continues after a DAM or vocabulary is stood up: who owns a file, what it can be used for, when it comes back for review."
-      }
-    ]
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
   },
   {
     "collection": "experience",
-    "id": "platform-specialist",
-    "slug": "platform-specialist",
-    "title": "Content platforms & architecture",
-    "subtitle": "CMS models, authoring, audits",
-    "summary": "Reusable models, the forms editors type into, and the inventory that shows what to keep.",
-    "year": "To confirm",
+    "id": "foolproof",
+    "slug": "foolproof",
+    "title": "Content Architect",
+    "subtitle": "Foolproof · Contract",
+    "summary": "Designed structured content systems for a digital insurance platform using Sanity CMS, supporting automated reporting and digital portal experiences. Defined content models, taxonomy and relationships between structured data and editorial content.",
+    "year": "2026",
     "tags": [
-      "CMS",
+      "Sanity",
       "Content modelling"
     ],
-    "sample": true,
-    "facts": [
-      {
-        "label": "Focus",
-        "value": "How the CMS is structured"
-      },
-      {
-        "label": "Covers",
-        "value": "Schema, authoring, content quality"
-      }
-    ],
-    "relations": {
-      "work": [
-        "structured-content",
-        "content-audit",
-        "authoring-experience"
-      ]
-    },
-    "story": [
-      {
-        "label": "Practice",
-        "title": "Fitting the platform to the task",
-        "body": "If the model and the form don’t match how people publish, they work around both. These projects are about that fit: records, references and checks at the point of entry."
-      }
-    ]
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
   },
   {
     "collection": "experience",
-    "id": "editorial-operations",
-    "slug": "editorial-operations",
-    "title": "Editorial delivery & enablement",
-    "subtitle": "Workflow, release, handover",
-    "summary": "Getting work from request to live, then leaving the next owner able to run it without asking me.",
-    "year": "To confirm",
+    "id": "lc-sound-consulting",
+    "slug": "lc-sound-consulting",
+    "title": "Independent Content & Platform Consultant",
+    "subtitle": "LC Sound Consulting Ltd",
+    "summary": "Delivered content architecture, CMS and DAM implementations, and content operations transformation for enterprise clients. Designed scalable content models, governance frameworks, migration strategies and publishing workflows across complex digital ecosystems.",
+    "year": "2022 – 2026",
     "tags": [
-      "Workflow",
-      "Training"
+      "Consulting",
+      "Governance"
     ],
-    "sample": true,
-    "facts": [
-      {
-        "label": "Focus",
-        "value": "Publishing and what happens after"
-      },
-      {
-        "label": "Covers",
-        "value": "Workflow, release checks, handover"
-      }
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "publicis-contract",
+    "slug": "publicis-contract",
+    "title": "Associate Content Director / Content Architect",
+    "subtitle": "Publicis Sapient · Contract engagements",
+    "summary": "Led enterprise content and platform engagements spanning DAM discovery, solution architecture, requirements definition, CMS migrations and delivery governance.",
+    "year": "2025 – 2026",
+    "tags": [
+      "DAM",
+      "Content architecture"
     ],
-    "relations": {
-      "work": [
-        "editorial-workflow",
-        "launch-readiness",
-        "knowledge-handover"
-      ]
-    },
-    "story": [
-      {
-        "label": "Practice",
-        "title": "From request to live, then handover",
-        "body": "A workflow is only useful if it names an owner and a publish check. Handover is the same problem later: tasks, sources of truth, and who keeps the guidance current."
-      }
-    ]
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "accenture-song",
+    "slug": "accenture-song",
+    "title": "Experience Transformation Manager, Content Strategy",
+    "subtitle": "Accenture Song",
+    "summary": "Led enterprise content transformation across financial services, life sciences and FMCG. Developed content architectures, global production models, metadata, governance and platform implementations for clients including Sandoz, Novartis, NatWest and Mars.",
+    "year": "2021 – 2025",
+    "tags": [
+      "Content strategy",
+      "Platforms"
+    ],
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "hogarth",
+    "slug": "hogarth",
+    "title": "Technical Content Strategist / Content Architect",
+    "subtitle": "Hogarth Worldwide",
+    "summary": "Designed modular content structures, governance and production workflows supporting Bayer’s global content operations and localisation.",
+    "year": "2020 – 2021",
+    "tags": [
+      "Content modelling",
+      "Workflow"
+    ],
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "publicis-early",
+    "slug": "publicis-early",
+    "title": "Content Strategist",
+    "subtitle": "Publicis Sapient",
+    "summary": "Delivered content strategy, information architecture and CMS transformation across financial services and enterprise websites, working with Contentful, Sitecore and structured content models.",
+    "year": "2019 – 2020",
+    "tags": [
+      "CMS",
+      "Information architecture"
+    ],
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "early-career",
+    "slug": "early-career",
+    "title": "Earlier experience",
+    "subtitle": "CNN / Turner Broadcasting · CBRE · Compelo · Cannes Lions · Guides for Brides · Holiday Lettings / TripAdvisor",
+    "summary": "Content, digital marketing and production roles across media, property and events.",
+    "year": "2012 – 2019",
+    "tags": [
+      "Content",
+      "Digital"
+    ],
+    "sample": false,
+    "facts": [],
+    "relations": {},
+    "story": []
   }
 ]
