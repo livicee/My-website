@@ -15,7 +15,7 @@
 .mix-player[data-state='playing'] .mix-player-toggle .icon:last-child, .mix-player[data-state='loading'] .mix-player-toggle .icon:last-child { display: block; }
 .mix-player[data-state='loading'] .mix-player-toggle { opacity: .55; }
 .mix-player-meta { grid-area: meta; display: flex; align-items: baseline; gap: 12px; min-width: 0; }
-.mix-player-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 500 14px/1.3 var(--sans); color: var(--foreground); }
+.mix-player-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 500 14px/1.3 var(--sans); color: var(--pink); }
 .mix-player-status { flex-shrink: 0; white-space: nowrap; color: var(--selection-ink); }
 .mix-player-status:empty { display: none; }
 .mix-player-time { grid-area: time; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--text-soft); }

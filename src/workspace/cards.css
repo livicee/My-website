@@ -59,7 +59,7 @@
 .entry-eyebrow { margin-bottom: 6px; font: 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .entry-body .row-title { display: grid; gap: 4px; }
 /* 20px title under the 22px section headings, 16px detail summary: cards sit inside the page's type scale. */
-.entry-body .row-title strong { font-size: 20px; line-height: 1.25; font-weight: 600; letter-spacing: -.02em; color: var(--foreground); transition: color var(--interaction-time) ease; }
+.entry-body .row-title strong { font-size: 20px; line-height: 1.25; font-weight: 600; letter-spacing: -.02em; color: var(--pink); transition: color var(--interaction-time) ease; }
 .entry-body .row-title > span { font-size: 16px; line-height: 1.5; color: var(--muted); }
 .entry-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; width: 100%; margin-top: 10px; }
 .chip { font: 12px/1.4 var(--mono); color: var(--muted); white-space: nowrap; }

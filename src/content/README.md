@@ -120,3 +120,7 @@ To delete a record, remove its whole object and adjust the neighbouring comma. S
 The 11 October feedback confirms the Storyblok status and Livicee profile links. It does not supply the employment chronology or project case studies; the current records remain samples. The full list of what to replace or approve is in [HANDOVER.md](../../HANDOVER.md#what-livi-must-replace-or-approve). YouTube is deferred until Livi supplies a channel. Portrait sources remain in `src/ascii/assets/`; ordinary content edits do not require touching those files or the application code.
 
 Developer setup and local checks are separate in [DEVELOPER.md](../../DEVELOPER.md). Types live in `schema.ts` and `src/workspace/model.ts`; no content migration is required.
+
+### About page formatting
+
+The About `body` supports blank lines (`\n\n` in JSON) for separate paragraphs, `## Heading` for section headings, `**text**` for bold names or phrases, and `_text_` for emphasis (used for DJ locations). Raw HTML is displayed as text. These styles use the existing site typography.

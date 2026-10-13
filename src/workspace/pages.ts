@@ -6,7 +6,18 @@ import { entryCard } from './cards';
 import { nightSetChart, phaseIndex, phaseLabel } from './night';
 
 function rich(text: string): string {
-    return escape(text).replace(/&lt;br\s*\/?&gt;/gi, '<br>');
+    return /<br\s*\/?\s*>/i.test(text) ? displayTitle(text) : escape(text);
+}
+
+/** About copy supports paragraphs, ## headings, **bold** and _emphasis_; HTML stays escaped. */
+export function aboutBody(text: string): string {
+    const inline = (value: string) => escape(value).replace(/\*\*([^*\n]+)\*\*|_([^_\n]+)_/g,
+        (_match, bold: string | undefined, emphasis: string | undefined) => bold !== undefined
+            ? `<strong>${bold}</strong>` : `<em>${emphasis}</em>`);
+    return text.trim().split(/\r?\n\s*\r?\n/).filter(Boolean).map(block => {
+        const heading = block.match(/^##\s+(.+)$/);
+        return heading ? `<h2>${inline(heading[1])}</h2>` : `<p>${inline(block)}</p>`;
+    }).join('');
 }
 
 /** Preserve the content title and line breaks, while giving each phrase its own display line. */
@@ -43,7 +54,7 @@ function overviewRow(record: ContentRecord): string {
 
 export function about(route: Route): string {
     const page = copy[route.dataset].about;
-    return `<article id="main" class="reading-page" tabindex="-1"><div class="profile-document"><h1>${rich(page.title)}</h1><p class="lede">${escape(page.lede)}</p><p>${escape(page.body)}</p><h2>${escape(page.principlesHeading)}</h2><dl class="principles">${page.principles.map(item => `<div><dt>${escape(item.title)}</dt><dd>${escape(item.body)}</dd></div>`).join('')}</dl>${link(sectionPath('work', route.dataset), escape(page.workLink) + ' ' + arrow(), 'button primary')}</div></article>`;
+    return `<article id="main" class="reading-page" tabindex="-1"><div class="profile-document"><h1>${rich(page.title)}</h1><p class="lede">${escape(page.lede)}</p><div class="about-body">${aboutBody(page.body)}</div><h2>${escape(page.principlesHeading)}</h2><dl class="principles">${page.principles.map(item => `<div><dt>${escape(item.title)}</dt><dd>${escape(item.body)}</dd></div>`).join('')}</dl>${link(sectionPath('work', route.dataset), escape(page.workLink) + ' ' + arrow(), 'button primary')}</div></article>`;
 }
 
 export function contact(route: Route): string {

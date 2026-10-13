@@ -1,5 +1,5 @@
 /* One type system, with expression in Livicee's portrait and night map. */
-.home-intro h1 > span { display: block; }
+.workspace h1 > span { display: block; }
 .profile-document > p, .story p { max-width: 65ch; }
 .record-facts, .crate-time, .crate-no, .count { font-variant-numeric: tabular-nums; }
 
@@ -37,7 +37,7 @@
 
 /* Both identities share the same opening typography; Livicee retains its pink accent. */
 [data-dataset='sound'] { --row-hover: #251c24; --record-selected: #30242d; }
-[data-dataset='sound'] .home-intro h1 > span + span { color: var(--pink); }
+.workspace h1 > span + span { color: var(--pink); }
 [data-dataset='sound'] .home-intro p { max-width: 54ch; }
 
 /* Shared, legible rows. The night map responds to the selected row without shifting its text. */
@@ -73,3 +73,6 @@
 @media (forced-colors: active) {
   .segment-control .query-chip[aria-pressed='true'] { outline: 2px solid Highlight; outline-offset: -2px; }
 }
+
+/* Project and mix names share the neon pink title treatment. */
+.crate-title strong, .set-mix strong, .index-record strong, .record-heading h1 { color: var(--pink); }
