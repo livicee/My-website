@@ -144,8 +144,8 @@ function modelView(r: ContentRecord): string {
 }
 /** Human context for the document. Machine identifiers remain available in Model view. */
 function docMeta(r: ContentRecord): string {
-    const roles = related(r, 'experience').length, projects = related(r, 'work').length;
-    const parts = r.collection === 'work' ? ['Project', plural(related(r, 'artefacts').length, 'evidence', 'evidence'), ...(roles ? [plural(roles, 'role')] : [])]
+    const roles = related(r, 'experience').length, projects = related(r, 'work').length, evidence = related(r, 'artefacts').length;
+    const parts = r.collection === 'work' ? ['Project', ...(evidence ? [plural(evidence, 'evidence', 'evidence')] : []), ...(roles ? [plural(roles, 'role')] : [])]
         : r.collection === 'artefacts' ? ['Evidence', ...(r.facets?.type ? [r.facets.type] : []), ...(projects ? [`used in ${plural(projects, 'project')}`] : [])]
         : [`Mix ${crateNumber(r)}`, ...(r.night ? [phaseLabel(r.night)] : [])];
     return `<p class="doc-meta">${parts.map((part, i) => `<span${i ? '' : ' class="doc-type"'}>${escape(part)}</span>`).join(' ')}</p>`;

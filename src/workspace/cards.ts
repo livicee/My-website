@@ -24,7 +24,7 @@ function thumbnail(record: ContentRecord): string {
 export function entryCard(record: ContentRecord): string {
     const evidence = related(record, 'artefacts').length;
     const chips = record.tags.slice(0, 3).map(tag => `<span class="chip">${escape(tag)}</span>`).join('');
-    const count = record.collection === 'work' ? `<span class="entry-count">${icon('document')}<span aria-hidden="true">${evidence}</span><span class="visually-hidden">${escape(plural(evidence, 'evidence record'))}</span></span>` : '';
+    const count = record.collection === 'work' && evidence > 0 ? `<span class="entry-count">${icon('document')}<span aria-hidden="true">${evidence}</span><span class="visually-hidden">${escape(plural(evidence, 'evidence record'))}</span></span>` : '';
     return `<span class="entry-media"><span class="entry-type" aria-hidden="true">${icon(typeIcon(record))}</span>${thumbnail(record)}${count}</span>`
         + `<span class="entry-body"><span class="entry-eyebrow">${escape(record.subtitle)}</span><span class="row-title"><strong>${escape(record.title)}</strong><span>${escape(record.summary)}</span></span>`
         + (chips ? `<span class="entry-foot">${chips}</span>` : '') + `</span>${arrow()}`;
