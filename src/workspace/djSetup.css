@@ -1,0 +1,12 @@
+.dj-setup { margin: 36px 0; padding: 24px 0; color: var(--pink); border-block: 1px solid var(--line); }
+.dj-setup svg { display: block; width: 100%; height: auto; overflow: visible; }
+.dj-setup .dj-case { fill: var(--bg); }
+.dj-setup .dj-detail { opacity: .55; }
+.dj-setup .dj-solid, .dj-setup .dj-meter { fill: currentColor; stroke: none; }
+.dj-setup .dj-jog-rim { stroke-width: 3; }
+.dj-setup .dj-jog-dashes { stroke-dasharray: 2 9; opacity: .6; }
+.dj-setup .dj-hub { fill: var(--bg); }
+.dj-glyphs { display: none; width: 100%; aspect-ratio: 680 / 310; }
+.dj-setup[data-glyphs='true'] .dj-glyphs { display: block; }
+.dj-setup[data-glyphs='true'] svg { display: none; }
+@media (max-width: 760px) { .dj-setup { margin: 28px 0; padding: 20px 0; } }
