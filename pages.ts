@@ -1,3 +1,4 @@
+import { djSetup } from './djSetup';
 import { all, copy, email, mediaUrl, notices, recordPath, related, site } from './content';
 import { sectionPath, type Route, type ContentRecord } from './model';
 import { escape, arrow, factsList, icon, instagramUrl, link, linkedinUrl, nightRuler, soundcloudUrl, statusNote } from './html';
@@ -54,7 +55,10 @@ function overviewRow(record: ContentRecord): string {
 
 export function about(route: Route): string {
     const page = copy[route.dataset].about;
-    return `<article id="main" class="reading-page" tabindex="-1"><div class="profile-document"><h1>${rich(page.title)}</h1><p class="lede">${escape(page.lede)}</p><div class="about-body">${aboutBody(page.body)}</div><h2>${escape(page.principlesHeading)}</h2><dl class="principles">${page.principles.map(item => `<div><dt>${escape(item.title)}</dt><dd>${escape(item.body)}</dd></div>`).join('')}</dl>${link(sectionPath('work', route.dataset), escape(page.workLink) + ' ' + arrow(), 'button primary')}</div></article>`;
+    const body = aboutBody(page.body);
+    const formattedBody = route.dataset === 'sound'
+        ? body.replace('<h2>No fixed formula.', djSetup() + '<h2>No fixed formula.') : body;
+    return `<article id="main" class="reading-page" tabindex="-1"><div class="profile-document"><h1>${rich(page.title)}</h1><p class="lede">${escape(page.lede)}</p><div class="about-body">${formattedBody}</div><h2>${escape(page.principlesHeading)}</h2><dl class="principles">${page.principles.map(item => `<div><dt>${escape(item.title)}</dt><dd>${escape(item.body)}</dd></div>`).join('')}</dl>${link(sectionPath('work', route.dataset), escape(page.workLink) + ' ' + arrow(), 'button primary')}</div></article>`;
 }
 
 export function contact(route: Route): string {
