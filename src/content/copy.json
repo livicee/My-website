@@ -47,7 +47,7 @@
     "about": {
       "title": "Open format.<br>Good instincts.",
       "lede": "Great music, good energy and a feel for the room.",
-      "body": "DJ Livicee, an **open-format DJ** with a love for great music, unexpected selections and **bringing people together on the dancefloor**.\n\nI've played everywhere from intimate private parties to packed dancefloors and international brand events, with sets taking me across _London_, _Las Vegas_, _Copenhagen_, _Cannes_, _Lisbon_, _Singapore_ and _Zurich_.\n\n## From iconic venues to international events\n\nAlong the way, I've played at **Printworks**, **Poble Espanyol**, **Tivoli**, **Aquário Romano**, **the Cannes Croisette** and **Ace Hotel**.\n\nI’ve also worked with names including **Google**, **Cannes Lions**, **Shoptalk**, **Money20/20**, **London Pride**, **Virgin Atlantic**, **Delta Air Lines** and **Silent Discos in Incredible Places**.\n\n## No fixed formula. No predictable playlists.\n\nMy sets move across genres and decades, mixing familiar favourites with tracks you didn't know you needed to hear.\n\nWhether I'm building the energy of a packed dancefloor or creating the soundtrack to something more intimate, it's always about finding **the right music for the right moment**.",
+      "body": "I'm Livi, the DJ behind **Livicee**. Open-format sets, unexpected selections and **a feel for the room**.\n\nFrom intimate private parties to international brand events, I've played for all kinds of crowds. Here's where the music has taken me.",
       "principlesHeading": "What I do",
       "principles": [
         {
@@ -63,7 +63,37 @@
           "body": "Curated soundtracks for brand experiences, launches and corporate events, including walk-on music, event openings, transitions and bespoke music programming."
         }
       ],
-      "workLink": "My mixes"
+      "workLink": "My mixes",
+      "highlights": {
+        "cities": [
+          "London",
+          "Las Vegas",
+          "Copenhagen",
+          "Cannes",
+          "Lisbon",
+          "Singapore",
+          "Zurich"
+        ],
+        "brands": [
+          "Google",
+          "Cannes Lions",
+          "Shoptalk",
+          "Money20/20",
+          "London Pride",
+          "Virgin Atlantic",
+          "Delta Air Lines",
+          "Silent Discos in Incredible Places"
+        ],
+        "venues": [
+          "Printworks",
+          "Poble Espanyol",
+          "Tivoli",
+          "Aquário Romano",
+          "Cannes Croisette",
+          "Ace Hotel"
+        ],
+        "after": "## No fixed formula. No predictable playlists.\n\nMy sets move across genres and decades, mixing familiar favourites with tracks you didn't know you needed to hear.\n\nWhether I'm building the energy of a packed dancefloor or creating the soundtrack to something more intimate, it's always about finding **the right music for the right moment**."
+      }
     },
     "contact": {
       "title": "Book Livicee.",
