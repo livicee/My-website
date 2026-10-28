@@ -1,5 +1,6 @@
-import './djSetup.css';
-import { bindDjSetup } from './djSetup';
+import './djAbout.css';
+import { bindDjHighlights } from './djAbout';
+import { updateSeo } from './seo';
 import { createNavigation, replaceWithCanonical, type NavigationUpdate } from './navigation';
 import './workspace.css';
 import './identity.css';
@@ -13,7 +14,7 @@ import { email } from './content';
 import { sectionPath, type DatasetId, type Route } from './model';
 import { parseRoute, hashFor, libraryPath, modeDestination } from './routes';
 import { withFacets } from './search';
-import { pageTitle, shell } from './views';
+import { shell } from './views';
 import { createFilterDialog } from './filterDialog';
 import { updateMarkup } from './dom';
 import { createViewState, viewStateKey } from './viewState';
@@ -34,7 +35,7 @@ let disposeRail = () => { };
 let railDataset: DatasetId | undefined;
 let railCanvas: Element | null = null;
 let disposePreviews = () => { };
-let disposeDjSetup = () => { };
+let disposeDjHighlights = () => { };
 let searchTimer = 0, toastTimer = 0;
 const positions = createViewState();
 const veil = createVeil();
@@ -71,11 +72,11 @@ function render(options: NavigationUpdate = {}): void {
     const oldIndex = document.querySelector('#index-records')?.scrollTop ?? 0;
     const previousCanvas = app.querySelector('#identity-grid');
     disposePreviews();
-    disposeDjSetup();
+    disposeDjHighlights();
     updateMarkup(app, shell(route));
     disposePreviews = bindEvidencePreviews(app);
-    disposeDjSetup = bindDjSetup(app);
-    document.title = pageTitle(route);
+    disposeDjHighlights = bindDjHighlights(app);
+    updateSeo(route);
     if (mountedDataset !== route.dataset || previousCanvas !== app.querySelector('#identity-grid')) {
         disposeIdentity();
         disposeIdentity = mountIdentity(route.dataset, options.previous);
@@ -301,7 +302,7 @@ document.addEventListener('keydown', event => {
 function focusHeaderSearch(): void {
     document.querySelector<HTMLInputElement>('[data-global-search]')?.focus();
 }
-window.addEventListener('pagehide', () => { disposeIdentity(); disposeRail(); disposePreviews(); disposeDjSetup(); veil.cancel(); cancelViewAnimations(); clearTimeout(searchTimer); clearTimeout(toastTimer); });
+window.addEventListener('pagehide', () => { disposeIdentity(); disposeRail(); disposePreviews(); disposeDjHighlights(); veil.cancel(); cancelViewAnimations(); clearTimeout(searchTimer); clearTimeout(toastTimer); });
 window.addEventListener('pageshow', event => {
     if (event.persisted) {
         disposeIdentity();
@@ -309,7 +310,7 @@ window.addEventListener('pageshow', event => {
         disposeRail();
         disposeRail = mountRailField(app);
         disposePreviews = bindEvidencePreviews(app);
-        disposeDjSetup = bindDjSetup(app);
+        disposeDjHighlights = bindDjHighlights(app);
     }
 });
 render();
