@@ -6,7 +6,8 @@ export function routeSeo(route: Route): { title: string; description: string; ca
     const canonical = site.siteUrl;
     if (route.record) {
         const author = route.dataset === 'sound' ? 'DJ Livicee' : site.author;
-        return { title: `${route.record.title} | ${author}`, description: route.record.summary, canonical };
+        const configured = site.pageSeo?.[`${route.dataset}.record.${route.record.id}`];
+        return { title: configured?.title || `${route.record.title} | ${author}`, description: configured?.description || route.record.summary, canonical };
     }
     const section = route.collection === 'work' ? 'projects' : route.collection === 'mixes' ? 'mixes' : route.page;
     const configured = site.pageSeo?.[`${route.dataset}.${section}`];

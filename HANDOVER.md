@@ -157,3 +157,5 @@ SoundCloud sync runs before production builds and approximately every six hours 
 5. Verify by publishing a new public mix and manually running the workflow. Without valid credentials only the fallback list is shown. Live authenticated testing has not yet been performed.
 
 Validation: npm run build and node tests/soundcloud-sync.mjs. Credentials must never use VITE_ prefixes or go into src files.
+
+SEO title update: descriptive section titles and individual case-study title overrides are configured in src/content/site.json. Hash routes still share one indexable document; distinct indexable case studies require a future clean-URL/prerender implementation. No ranking guarantees are implied.
