@@ -1,6 +1,46 @@
 [
   {
     "collection": "mixes",
+    "id": "house-edits-oct-2026",
+    "slug": "house-edits-oct-2026",
+    "title": "House Edits - Oct 2026",
+    "subtitle": "House edits",
+    "summary": "Janet Jackson, Madonna, George Michael and Kylie, reworked for the dancefloor. A house-edits mix from DJ Livicee.",
+    "year": "2026",
+    "tags": [
+      "House",
+      "Edits"
+    ],
+    "sample": false,
+    "facts": [
+      {
+        "label": "Featuring",
+        "value": "Janet Jackson, Madonna, George Michael and Kylie"
+      },
+      {
+        "label": "Style",
+        "value": "House edits"
+      },
+      {
+        "label": "Released",
+        "value": "October 2026"
+      },
+      {
+        "label": "Listen",
+        "value": "SoundCloud"
+      }
+    ],
+    "relations": {},
+    "facets": {
+      "style": "House edits"
+    },
+    "audio": {
+      "link": "https://soundcloud.com/livicee/house-edits-oct-2026",
+      "duration": 2209.262
+    }
+  },
+  {
+    "collection": "mixes",
     "id": "after-hours",
     "slug": "after-hours",
     "title": "January Bluze (Pirate Studios mix)",

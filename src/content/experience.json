@@ -6,13 +6,24 @@
     "title": "Implementation Success Manager",
     "subtitle": "Storyblok",
     "summary": "Leading customer implementation success, connecting solution design, delivery partners, technical requirements and business outcomes across CMS implementations.",
-    "year": "Oct 2026 – Present",
+    "year": "October 2026–present",
     "tags": [
-      "Implementation",
-      "CMS"
+      "Implementation planning",
+      "Content architecture",
+      "Readiness",
+      "Risk management"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Implementation planning · Content architecture · Readiness · Risk management"
+      },
+      {
+        "label": "Platforms",
+        "value": "Storyblok"
+      }
+    ],
     "relations": {},
     "story": []
   },
@@ -23,13 +34,24 @@
     "title": "Content Architect",
     "subtitle": "Foolproof · Contract",
     "summary": "Designed structured content systems for a digital insurance platform using Sanity CMS, supporting automated reporting and digital portal experiences. Defined content models, taxonomy and relationships between structured data and editorial content.",
-    "year": "2026",
+    "year": "December 2025–March 2026; June–July 2026",
     "tags": [
-      "Sanity",
-      "Content modelling"
+      "Content modelling",
+      "Domain modelling",
+      "Automated reporting",
+      "Content operations"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Content modelling · Domain modelling · Automated reporting · Content operations"
+      },
+      {
+        "label": "Platforms",
+        "value": "Sanity"
+      }
+    ],
     "relations": {},
     "story": []
   },
@@ -40,13 +62,24 @@
     "title": "Independent Content & Platform Consultant",
     "subtitle": "LC Sound Consulting Ltd",
     "summary": "Delivered content architecture, CMS and DAM implementations, and content operations transformation for enterprise clients. Designed scalable content models, governance frameworks, migration strategies and publishing workflows across complex digital ecosystems.",
-    "year": "2022 – 2026",
+    "year": "June 2022–October 2026",
     "tags": [
-      "Consulting",
-      "Governance"
+      "Content strategy",
+      "Governance",
+      "Taxonomy",
+      "Workflow design"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Content strategy · Governance · Taxonomy · Workflow design"
+      },
+      {
+        "label": "Platforms",
+        "value": "CMS and DAM ecosystems"
+      }
+    ],
     "relations": {},
     "story": []
   },
@@ -57,13 +90,53 @@
     "title": "Associate Content Director / Content Architect",
     "subtitle": "Publicis Sapient · Contract engagements",
     "summary": "Led enterprise content and platform engagements spanning DAM discovery, solution architecture, requirements definition, CMS migrations and delivery governance.",
-    "year": "2025 – 2026",
+    "year": "February–April 2025; March–June 2026",
     "tags": [
-      "DAM",
-      "Content architecture"
+      "Information architecture",
+      "Content modelling",
+      "Migration planning",
+      "Component architecture"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Information architecture · Content modelling · Migration planning · Component architecture"
+      },
+      {
+        "label": "Platforms",
+        "value": "Sitecore, Strapi, Bynder, Optimizely"
+      }
+    ],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "maybourne",
+    "slug": "maybourne",
+    "title": "DAM Product Manager & Content Strategist",
+    "subtitle": "Maybourne",
+    "year": "April–December 2025",
+    "summary": "Led the rollout of the Maybourne Library across seven luxury hospitality brands. Delivered migration of 8,000+ assets, established taxonomy and asset-management workflows, and supported Bynder integration with Optimizely, governance and training.",
+    "tags": [
+      "DAM implementation",
+      "Asset migration",
+      "Metadata",
+      "Governance",
+      "Training"
+    ],
+    "sample": false,
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "DAM implementation · Asset migration · Metadata · Governance · Training"
+      },
+      {
+        "label": "Platforms and technologies",
+        "value": "Bynder, Optimizely"
+      }
+    ],
     "relations": {},
     "story": []
   },
@@ -74,13 +147,24 @@
     "title": "Experience Transformation Manager, Content Strategy",
     "subtitle": "Accenture Song",
     "summary": "Led enterprise content transformation across financial services, life sciences and FMCG. Developed content architectures, global production models, metadata, governance and platform implementations for clients including Sandoz, Novartis, NatWest and Mars.",
-    "year": "2021 – 2025",
+    "year": "July 2021–February 2025",
     "tags": [
-      "Content strategy",
-      "Platforms"
+      "Operating models",
+      "Workflow transformation",
+      "Global rollout",
+      "Change management"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Operating models · Workflow transformation · Global rollout · Change management"
+      },
+      {
+        "label": "Platforms",
+        "value": "Aprimo, Veeva Vault, AEM"
+      }
+    ],
     "relations": {},
     "story": []
   },
@@ -91,13 +175,24 @@
     "title": "Technical Content Strategist / Content Architect",
     "subtitle": "Hogarth Worldwide",
     "summary": "Designed modular content structures, governance and production workflows supporting Bayer’s global content operations and localisation.",
-    "year": "2020 – 2021",
+    "year": "February 2020–June 2021",
     "tags": [
-      "Content modelling",
-      "Workflow"
+      "Modular content",
+      "Localisation",
+      "Regulated workflows",
+      "Quality standards"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Modular content · Localisation · Regulated workflows · Quality standards"
+      },
+      {
+        "label": "Platforms",
+        "value": "Veeva, Viseven"
+      }
+    ],
     "relations": {},
     "story": []
   },
@@ -108,30 +203,81 @@
     "title": "Content Strategist",
     "subtitle": "Publicis Sapient",
     "summary": "Delivered content strategy, information architecture and CMS transformation across financial services and enterprise websites, working with Contentful, Sitecore and structured content models.",
-    "year": "2019 – 2020",
+    "year": "February 2019–February 2020",
     "tags": [
-      "CMS",
-      "Information architecture"
+      "Content architecture",
+      "Content modelling",
+      "CMS migration",
+      "Author training"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Content architecture · Content modelling · CMS migration · Author training"
+      },
+      {
+        "label": "Platforms",
+        "value": "AEM, Contentful, Webflow"
+      }
+    ],
     "relations": {},
     "story": []
   },
   {
     "collection": "experience",
-    "id": "early-career",
-    "slug": "early-career",
-    "title": "Earlier experience",
-    "subtitle": "CNN / Turner Broadcasting · CBRE · Compelo · Cannes Lions · Guides for Brides · Holiday Lettings / TripAdvisor",
-    "summary": "Content, digital marketing and production roles across media, property and events.",
-    "year": "2012 – 2019",
+    "id": "cbre",
+    "slug": "cbre",
+    "title": "Content and CMS Manager",
+    "subtitle": "CBRE",
+    "year": "September 2017–December 2018",
+    "summary": "Delivered content migration and publishing across 24+ multilingual EMEA websites during CBRE’s move to Sitecore. Coordinated country marketing teams, programme leadership and agencies, providing CMS training and ongoing support.",
     "tags": [
-      "Content",
-      "Digital"
+      "Multilingual migration",
+      "Content authoring",
+      "Market coordination",
+      "CMS training"
     ],
     "sample": false,
-    "facts": [],
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Multilingual migration · Content authoring · Market coordination · CMS training"
+      },
+      {
+        "label": "Platforms and technologies",
+        "value": "Sitecore"
+      }
+    ],
+    "relations": {},
+    "story": []
+  },
+  {
+    "collection": "experience",
+    "id": "cannes-lions",
+    "slug": "cannes-lions",
+    "title": "Digital Producer",
+    "subtitle": "Cannes Lions International Festival of Creativity",
+    "year": "November 2014–April 2017",
+    "summary": "Built, maintained and managed websites, microsites and email campaigns across Cannes Lions, Eurobest, Spikes Asia and Dubai Lynx. Delivered website reskins, components, responsive HTML/CSS emails and social content with Design, Copy and Marketing.",
+    "tags": [
+      "Digital production",
+      "CMS management",
+      "Component development",
+      "Email production",
+      "Social content"
+    ],
+    "sample": false,
+    "facts": [
+      {
+        "label": "Skills",
+        "value": "Digital production · CMS management · Component development · Email production · Social content"
+      },
+      {
+        "label": "Platforms and technologies",
+        "value": "Sitecore, IBM Silverpop, Marketo, HTML, CSS"
+      }
+    ],
     "relations": {},
     "story": []
   }

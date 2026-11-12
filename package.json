@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "node tests/run.mjs && node tests/evidence-previews.mjs && node tests/content-validation.mjs && node tests/content-build.mjs && node tests/fixture-runner.mjs",
     "fixtures": "node tests/fixtures.mjs",
-    "check": "npm run validate:content && tsc --noEmit && tsc --noEmit -p tsconfig.node.json && npm test"
+    "check": "npm run validate:content && tsc --noEmit && tsc --noEmit -p tsconfig.node.json && npm test",
+    "test:soundcloud": "node tests/soundcloud-sync.mjs"
   },
   "devDependencies": {
     "typescript": "~5.9.2",

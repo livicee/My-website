@@ -141,3 +141,19 @@ Setup, checks and previews are in [DEVELOPER.md](DEVELOPER.md). Design and produ
 - **Headers:** Content shows "Currently: Implementation Success Manager @ Storyblok". Livicee shows "Available for Bookings". Both come from `status` in `site.json`.
 - **Livicee:** the approved DJ illustration, with her SoundCloud and Instagram in the rail and on Contact. SoundCloud sets play in a persistent player bar that keeps playing across navigation and identity switches.
 - **Records:** 30 samples in total: 10 projects, 12 evidence examples, 3 Experience groupings and 5 mixes.
+
+
+## November 2026: SoundCloud sync and content update
+
+Five projects now include NatWest Group and Schroders Personal Wealth. Experience includes relevant roles, skills and platforms, including CBRE and Cannes Lions. The broken page renderer is repaired and SEO configuration is installed in the actual src paths. Existing project imagery is preserved; new projects use the existing placeholder.
+
+SoundCloud sync runs before production builds and approximately every six hours through the existing Pages workflow. Scheduled GitHub jobs can be delayed and may be disabled after prolonged repository inactivity. New public uploads are imported newest first. Existing editorial titles, descriptions, slugs, artwork and relationships are preserved. SoundCloud artwork is served from its HTTPS image host; no waveforms are invented. Tracks removed or made private on SoundCloud remain in the repository fallback and must be removed manually. No credentials or imported data are committed automatically. Failed API requests retain fallback mixes.
+
+### Setup
+1. Sign in at https://soundcloud.com/you/apps and create an application using SoundCloud's current registration instructions: https://developers.soundcloud.com/docs/api/register-app . Name: Livicee Portfolio. Website: https://www.livicracknell.com . Description: Display my public DJ mixes on my personal portfolio. If a redirect URI is required, use https://www.livicracknell.com/ (this integration uses client credentials, not interactive login).
+2. Keep the Client ID and Client Secret private. Open https://github.com/livicee/My-website/settings/secrets/actions . Choose New repository secret twice: SOUNDCLOUD_CLIENT_ID and SOUNDCLOUD_CLIENT_SECRET. Paste the corresponding value into each.
+3. Install updated source files at their exact paths. With GitHub Desktop: open the repository's local folder, extract this ZIP elsewhere, then copy the CONTENTS of My-website-main into that repository folder and choose Replace. Do not drag the enclosing My-website-main folder into the repository. Include the .github folder (hidden on macOS; Command+Shift+period shows it). Review changed paths in GitHub Desktop before committing and pushing.
+4. In GitHub Actions open Build and deploy, choose Run workflow on main. Read the Sync public SoundCloud mixes step: it must say sync complete, rather than skipped or unavailable. Then confirm the deployment succeeds and inspect the Mixes page.
+5. Verify by publishing a new public mix and manually running the workflow. Without valid credentials only the fallback list is shown. Live authenticated testing has not yet been performed.
+
+Validation: npm run build and node tests/soundcloud-sync.mjs. Credentials must never use VITE_ prefixes or go into src files.

@@ -1,8 +1,8 @@
 {
   "author": "Livi Cracknell",
-  "siteUrl": "https://livi-cracknell.github.io/",
-  "searchTitle": "Livi Cracknell · Content & Sound",
-  "searchDescription": "Livi Cracknell: content operations and digital platforms. Also DJ Livicee.",
+  "siteUrl": "https://www.livicracknell.com/",
+  "searchTitle": "Livi Cracknell | Content Architecture & Implementation",
+  "searchDescription": "Content architecture, CMS and DAM implementation by Livi Cracknell. Structured content, migration and governance across platforms, teams and operations.",
   "entity": "LC Sound Consulting",
   "email": "livicracknell91@gmail.com",
   "footerNote": "",
@@ -36,6 +36,44 @@
       "status": "Available for Bookings",
       "soundcloud": "https://soundcloud.com/livicee",
       "instagram": "https://instagram.com/livicee"
+    }
+  },
+  "pageSeo": {
+    "production.home": {
+      "title": "Livi Cracknell | Content Architecture & Implementation",
+      "description": "Content architecture, CMS and DAM implementation by Livi Cracknell. Structured content, migration and governance across platforms, teams and operations."
+    },
+    "production.about": {
+      "title": "About Livi Cracknell | Content Architecture & Operations",
+      "description": "Meet Livi Cracknell, a content architect and implementation specialist connecting content models, taxonomy, digital platforms, governance and operations."
+    },
+    "production.projects": {
+      "title": "CMS, DAM & Content Architecture Projects | Livi Cracknell",
+      "description": "Explore content architecture, headless CMS migration, Bynder DAM implementation and Sanity report automation projects by Livi Cracknell."
+    },
+    "production.experience": {
+      "title": "Content Architecture & Platform Experience | Livi Cracknell",
+      "description": "Explore Livi Cracknell’s experience in content strategy, operations, CMS and DAM implementation, from agency engagements to implementation success at Storyblok."
+    },
+    "production.contact": {
+      "title": "Contact Livi Cracknell | Content & Digital Platforms",
+      "description": "Get in touch with Livi Cracknell about content architecture, digital platforms, CMS and DAM implementation, content operations and professional enquiries."
+    },
+    "sound.home": {
+      "title": "DJ Livicee | Open-Format DJ for Weddings & Events",
+      "description": "Meet DJ Livicee: open-format sets for weddings, private parties and brand events. Explore house, disco and soul mixes and enquire about bookings."
+    },
+    "sound.about": {
+      "title": "About DJ Livicee | Clubs, Weddings & International Events",
+      "description": "From Printworks and Ace Hotel to Cannes and Las Vegas, discover the venues, cities, brands and events behind DJ Livicee’s open-format sets."
+    },
+    "sound.mixes": {
+      "title": "DJ Livicee Mixes | House Edits, Disco, Soul & R&B",
+      "description": "Listen to DJ Livicee’s house edits, disco, neo soul and R&B mixes, including House Edits October 2026 with Janet Jackson, Madonna, George Michael and Kylie."
+    },
+    "sound.contact": {
+      "title": "Book DJ Livicee | Weddings, Parties & Brand Events",
+      "description": "Enquire about booking DJ Livicee for a wedding, private party or brand event, with open-format sets and music programming tailored to the occasion."
     }
   }
 }

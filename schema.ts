@@ -53,6 +53,7 @@ export interface SiteContent {
     searchTitle?: string;
     /** Search-result and link-preview description. */
     searchDescription?: string;
+    pageSeo?: Record<string, { title: string; description: string }>;
     entity: string;
     email: string;
     footerNote: string;
@@ -66,7 +67,15 @@ interface PageHomeCopy {
     contactLink: string;
 }
 
+export interface DjHighlights {
+    cities: string[];
+    brands: string[];
+    venues: string[];
+    after: string;
+}
+
 interface PageAboutCopy {
+    highlights?: DjHighlights;
     title: string;
     lede: string;
     body: string;

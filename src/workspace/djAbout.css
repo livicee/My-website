@@ -1,0 +1,22 @@
+.dj-destinations, .dj-brands, .dj-venues { margin-block: 36px; }
+.about-body .dj-section-label { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+.dj-section-label > span { color: var(--pink); font: 22px var(--mono); }
+.about-body .dj-section-label h2 { margin: 0; }
+.dj-city-board, .dj-brand-wall, .dj-venue-list { list-style: none; padding: 0; margin: 0; }
+.dj-city-board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); column-gap: 24px; }
+.dj-city-board li { display: grid; grid-template-columns: 24px minmax(0, 1fr) 14px; align-items: center; gap: 10px; padding-block: 14px; border-bottom: 1px solid var(--line); color: var(--text-soft); font: 14px/1.5 var(--mono); }
+.dj-city-number { color: var(--pink); font-size: 12px; }
+.dj-city-mark { color: var(--muted); }
+.about-body .dj-brands h2, .about-body .dj-venues h2 { margin: 0 0 12px; }
+.about-body .dj-highlight-intro { margin-bottom: 20px; font-size: var(--type-detail); }
+.dj-brand-wall { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.dj-brand-wall li { padding: 22px 16px 22px 0; border-bottom: 1px solid var(--line); color: var(--foreground); font: 600 clamp(20px, 2vw, 27px)/1.2 var(--sans); letter-spacing: -.025em; overflow-wrap: anywhere; }
+.dj-brand-wall li:nth-child(3n + 2) { color: var(--pink); }
+.brand-word { display: inline-block; }
+.brand-letter { display: inline-block; }
+[data-revealed='true'] .brand-letter { animation: dj-brand-reveal 480ms ease-out both; animation-delay: var(--reveal-delay); }
+.dj-venue-list { display: flex; flex-wrap: wrap; gap: 10px 20px; color: var(--text-soft); font-size: var(--type-detail); }
+.dj-venue-list li { padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+@keyframes dj-brand-reveal { from { transform: translateY(3px); color: var(--pink); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { [data-revealed='true'] .brand-letter { animation: none; } }
+@media (max-width: 480px) { .dj-city-board { grid-template-columns: 1fr; } .dj-brand-wall li { font-size: 21px; padding-block: 18px; } }

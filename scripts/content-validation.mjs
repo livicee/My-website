@@ -228,6 +228,7 @@ export function validateContentFiles(files) {
             if (own(record, 'artwork')) {
                 const artwork = object(record.artwork, `${path}.artwork`, 'cover image');
                 if (artwork) {
+                    if (own(artwork, 'url') && !(typeof artwork.url === 'string' && artwork.url.startsWith('https://i1.sndcdn.com/'))) issue(`${path}.artwork.url`, 'Use a SoundCloud artwork URL.');
                     if (own(artwork, 'file')) attachment(artwork.file, `${path}.artwork.file`, 'artwork');
                     optionalText(artwork, `${path}.artwork`, 'alt', 'the image description');
                 }

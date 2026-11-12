@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {mergeTracks} from '../scripts/sync-soundcloud.mjs';
+const track = {id:123,sharing:'public',title:'New mix',user:{permalink:'livicee'},permalink_url:'https://soundcloud.com/livicee/new',created_at:'2026-11-12T10:00:00Z',duration:120000,artwork_url:'https://i1.sndcdn.com/art.jpg'};
+const old={id:'custom',slug:'keep-slug',title:'Editorial title',audio:{link:track.permalink_url},summary:'Keep me'};
+assert.equal(mergeTracks([old],[track,track]).length,1);
+assert.equal(mergeTracks([old],[track])[0].title,'Editorial title');
+assert.equal(mergeTracks([old],[track])[0].slug,'keep-slug');
+assert.equal(mergeTracks([old],[track])[0].audio.duration,120);
+assert.equal(mergeTracks([old],[])[0],old);
+assert.equal(mergeTracks([], [{...track,sharing:'private'}]).length,0);
+assert.equal(mergeTracks([], [{...track,user:{permalink:'other'}}]).length,0);
+assert.equal(mergeTracks([], [track])[0].id,'soundcloud-123');
+assert.equal(mergeTracks([], [track])[0].artwork.url,track.artwork_url);
+console.log('SoundCloud merge checks passed.');

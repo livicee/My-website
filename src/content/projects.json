@@ -171,5 +171,94 @@
         "body": "Sanity was successfully implemented, users were trained and the portal went live to enable the creation of client reports."
       }
     ]
+  },
+  {
+    "collection": "work",
+    "id": "natwest-faq-chatbot",
+    "slug": "natwest-faq-chatbot",
+    "title": "Connecting FAQs with chatbot answers",
+    "subtitle": "NatWest Group · Accenture",
+    "year": "2023–2024",
+    "summary": "Restructured FAQ content across five NatWest Group brands, connecting personal and business banking answers with websites and a chatbot.",
+    "tags": [
+      "Content architecture",
+      "Content audit",
+      "Taxonomy",
+      "Content migration"
+    ],
+    "sample": false,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": "Abstract project illustration"
+    },
+    "facts": [
+      {
+        "label": "Platforms",
+        "value": "Adobe Experience Manager (AEM)"
+      }
+    ],
+    "relations": {},
+    "story": [
+      {
+        "label": "Challenge",
+        "title": "The challenge",
+        "body": "FAQ content in a legacy CMS needed auditing, cleaning and restructuring to support chatbot answers."
+      },
+      {
+        "label": "My role",
+        "title": "My contribution",
+        "body": "Audited and restructured FAQ content, developed a tagging approach and worked with a technical architect to write a migration script to move content into AEM."
+      },
+      {
+        "label": "Outcome",
+        "title": "What launched",
+        "body": "Launched the restructured content and chatbot integration, with an improved authoring experience."
+      }
+    ]
+  },
+  {
+    "collection": "work",
+    "id": "schroders-contentful",
+    "slug": "schroders-contentful",
+    "title": "From WordPress to structured content",
+    "subtitle": "Schroders Personal Wealth · Publicis Sapient",
+    "year": "2019",
+    "summary": "Designed the content architecture for a WordPress-to-Contentful migration, translating UX, components and templates into a structured content model.",
+    "tags": [
+      "Content modelling",
+      "Content architecture",
+      "Content mapping",
+      "Taxonomy",
+      "Author training"
+    ],
+    "sample": false,
+    "artwork": {
+      "file": "project-placeholder.png",
+      "alt": "Abstract project illustration"
+    },
+    "facts": [
+      {
+        "label": "Platforms",
+        "value": "WordPress → Contentful"
+      }
+    ],
+    "relations": {},
+    "story": [
+      {
+        "label": "Challenge",
+        "title": "The challenge",
+        "body": "The new website needed a coherent content model to underpin its components, templates and user experience."
+      },
+      {
+        "label": "My role",
+        "title": "My contribution",
+        "body": "Modelled content across the entire site, audited and mapped existing content, shaped content design and taxonomy, and trained authors to manage and publish content in Contentful."
+      },
+      {
+        "label": "Outcome",
+        "title": "What launched",
+        "body": "Launched the website on Contentful with a structured content foundation and trained authors."
+      }
+    ]
   }
 ]

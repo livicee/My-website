@@ -30,7 +30,7 @@ const validPeaks = (peaks: unknown): peaks is number[] =>
 
 export function hydrate(record: StoredRecord): ContentRecord {
     const { audio, artwork, night, ...stored } = record;
-    const art = artwork?.file ? mediaUrl(artwork.file) : undefined;
+    const art = artwork?.file ? mediaUrl(artwork.file) : (artwork?.url?.startsWith('https://i1.sndcdn.com/') ? artwork.url : undefined);
     const placed: ContentRecord = isNightPhase(night) ? { ...stored, night } : stored;
     const rest: ContentRecord = art
         ? { ...placed, artwork: { src: art, alt: artwork?.alt?.trim() || `Cover art for ${stored.title}` } }
