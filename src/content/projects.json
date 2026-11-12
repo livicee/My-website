@@ -188,8 +188,8 @@
     ],
     "sample": false,
     "artwork": {
-      "file": "project-placeholder.png",
-      "alt": "Abstract project illustration"
+      "file": "project-natwest.png",
+      "alt": "Neon pink line diagram of FAQ content connecting to a chatbot."
     },
     "facts": [
       {
@@ -201,18 +201,23 @@
     "story": [
       {
         "label": "Challenge",
-        "title": "The challenge",
-        "body": "FAQ content in a legacy CMS needed auditing, cleaning and restructuring to support chatbot answers."
+        "title": "One content source. More ways to find an answer.",
+        "body": "Across five NatWest Group brands, personal and business banking FAQs were held in a legacy CMS. To connect this content with a chatbot, the answers needed to be audited, cleaned and restructured before migration to Adobe Experience Manager (AEM)."
       },
       {
-        "label": "My role",
-        "title": "My contribution",
-        "body": "Audited and restructured FAQ content, developed a tagging approach and worked with a technical architect to write a migration script to move content into AEM."
+        "label": "Content architecture",
+        "title": "Making the answers work harder",
+        "body": "I audited the existing FAQ content and refined its structure and consistency. The focus was on preparing questions and answers for use across the website and chatbot, with a tagging approach to support content organisation and retrieval."
+      },
+      {
+        "label": "Implementation",
+        "title": "From legacy content to AEM",
+        "body": "I worked with a technical architect to write the migration script, connecting the content restructuring work with the technical move into AEM. The chatbot integration formed part of the same programme."
       },
       {
         "label": "Outcome",
-        "title": "What launched",
-        "body": "Launched the restructured content and chatbot integration, with an improved authoring experience."
+        "title": "Launched across web and chatbot",
+        "body": "The project launched with restructured FAQ content in AEM and an integrated chatbot. It also improved the authoring experience for the teams maintaining personal and business banking answers across the five brands."
       }
     ]
   },
@@ -233,8 +238,8 @@
     ],
     "sample": false,
     "artwork": {
-      "file": "project-placeholder.png",
-      "alt": "Abstract project illustration"
+      "file": "project-schroders.png",
+      "alt": "Neon pink line diagram of website content being organised into reusable components."
     },
     "facts": [
       {
@@ -246,18 +251,23 @@
     "story": [
       {
         "label": "Challenge",
-        "title": "The challenge",
-        "body": "The new website needed a coherent content model to underpin its components, templates and user experience."
+        "title": "A new CMS needed a new content foundation",
+        "body": "Schroders Personal Wealth was moving its website from WordPress to Contentful. The UX, components and templates needed a coherent structure behind them, with clear content models and a practical approach to moving existing material into the new platform."
       },
       {
-        "label": "My role",
-        "title": "My contribution",
-        "body": "Modelled content across the entire site, audited and mapped existing content, shaped content design and taxonomy, and trained authors to manage and publish content in Contentful."
+        "label": "Content architecture",
+        "title": "Modelling the whole website",
+        "body": "I content-modelled the entire site, translating the experience and template requirements into structured content. Alongside this, I audited existing material, mapped content to the new structure and shaped the content design and taxonomy."
+      },
+      {
+        "label": "Author enablement",
+        "title": "Preparing the people who would publish",
+        "body": "The implementation included author training so the team could manage and publish content in Contentful. This connected the new architecture with the day-to-day work of maintaining the website after launch."
       },
       {
         "label": "Outcome",
-        "title": "What launched",
-        "body": "Launched the website on Contentful with a structured content foundation and trained authors."
+        "title": "A launched website with structure behind it",
+        "body": "The website launched on Contentful with a site-wide content model, mapped content and trained authors. The programme brought content architecture, migration preparation and publishing practice together as part of the platform change."
       }
     ]
   }
