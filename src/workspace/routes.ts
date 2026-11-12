@@ -57,6 +57,10 @@ export function parseRoute(hash: string): Route {
     }
     if (path === '/home')
         path = '/';
+    if (path === '/livicee') {
+        path = '/livicee/mixes';
+        segments = ['livicee', 'mixes'];
+    }
     const dataset = segments[0] === 'livicee' ? 'sound' : 'production';
     const base: Route = { dataset, page: 'not-found', path, query };
     if (path === '/' || path === '/livicee')

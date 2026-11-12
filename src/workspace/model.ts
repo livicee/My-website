@@ -117,7 +117,7 @@ export function sectionFor(route: Route): Section {
 export function sectionPath(section: Section, dataset: DatasetId): string {
     const sound = dataset === 'sound';
     if (section === 'home')
-        return sound ? '/livicee' : '/';
+        return sound ? '/livicee/mixes' : '/';
     if (section === 'work')
         return sound ? '/livicee/mixes' : '/work';
     // The CV (public "Work" tab) is Content-only; Livicee's nearest page is About.

@@ -199,10 +199,12 @@ try {
   });
   check('default route opens Content home', () => assert.equal(parseRoute('').page, 'home'));
   check('mode switches preserve the section in both directions', () => {
-    for (const [content, sound] of [['/', '/livicee'], ['/about', '/livicee/about'], ['/contact', '/livicee/contact'], ['/work', '/livicee/mixes']]) {
+    for (const [content, sound] of [['/about', '/livicee/about'], ['/contact', '/livicee/contact'], ['/work', '/livicee/mixes']]) {
       assert.equal(modeDestination(parseRoute(`#${content}`), 'sound'), `#${sound}`);
       assert.equal(modeDestination(parseRoute(`#${sound}`), 'production'), `#${content}`);
     }
+    assert.equal(modeDestination(parseRoute('#/'), 'sound'), '#/livicee/mixes');
+    assert.equal(parseRoute('#/livicee').path, '/livicee/mixes');
     assert.equal(parseRoute('').dataset, 'production');
     assert.equal(parseRoute('#/livicee/about').dataset, 'sound');
     // The CV has no Livicee equivalent, so it switches to About.
@@ -216,7 +218,7 @@ try {
       assert.equal(parseRoute(modeDestination(route, target)).path, expected, record.id);
       assert.equal(modeDestination(route, route.dataset), hashFor(route.path, route.query));
     }
-    assert.equal(modeDestination(parseRoute('#/unknown'), 'sound'), '#/livicee');
+    assert.equal(modeDestination(parseRoute('#/unknown'), 'sound'), '#/livicee/mixes');
   });
   check('sidebar links remain inside the active persona', () => {
     for (const path of ['/', '/about', '/livicee', '/livicee/about']) {
@@ -224,7 +226,7 @@ try {
       const nav = shell(route).match(/<div class="nav-links">(.*?)<\/div>/s)[1];
       const destinations = [...nav.matchAll(/href="(#[^"]+)"/g)].map(match => parseRoute(match[1]));
       assert.equal((nav.match(/target="_blank" rel="noopener noreferrer"/g) ?? []).length, 1, 'each identity offers one outside profile (LinkedIn or SoundCloud), and it opens outside the site safely');
-      assert.equal(destinations.length, route.dataset === 'sound' ? 4 : 5);
+      assert.equal(destinations.length, route.dataset === 'sound' ? 3 : 5);
       assert.ok(destinations.every(destination => destination.dataset === route.dataset));
     }
     const projectsNav = shell(parseRoute('#/work')).match(/<div class="nav-links">(.*?)<\/div>/s)[1];
@@ -684,7 +686,7 @@ try {
       assert.equal(title.split(identity).length, 2, `${path}: ${title}`);
       assert.doesNotMatch(title, /[<>]/, path);
     }
-    assert.equal(pageTitle(parseRoute('#/livicee')), 'Selected sound · Livicee');
+    assert.equal(pageTitle(parseRoute('#/livicee')), 'Mixes · Livicee');
     const cvTitle = copy.production.cv.title;
     copy.production.cv.title = 'Work<br>history.';
     try { assert.equal(pageTitle(parseRoute('#/experience')), 'Work history · Livi Cracknell'); } finally { copy.production.cv.title = cvTitle; }

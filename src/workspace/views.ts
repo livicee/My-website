@@ -11,7 +11,7 @@ export function shell(route: Route): string {
     const identity = site.identities[route.dataset];
     const searchValue = escape(route.query.get('q') ?? '');
     // Only an identity with a CV label gets the CV tab.
-    const nav: Section[] = identity.cvLabel ? ['home', 'work', 'experience', 'about', 'contact'] : ['home', 'work', 'about', 'contact'];
+    const nav: Section[] = identity.cvLabel ? ['home', 'work', 'experience', 'about', 'contact'] : sound ? ['work', 'about', 'contact'] : ['home', 'work', 'about', 'contact'];
     const navLabel = (key: Section) => key === 'work' ? identity.workLabel : key === 'experience' ? identity.cvLabel ?? 'Experience' : key[0].toUpperCase() + key.slice(1);
     const current = route.collection ? collectionNames[route.collection] : route.page === 'home' ? 'Overview' : route.page === 'not-found' ? 'Not found' : route.page === 'experience' ? navLabel('experience') : route.page[0].toUpperCase() + route.page.slice(1);
     const year = new Date().getFullYear();
