@@ -1,9 +1,7 @@
 import { all, copy, email, mediaUrl, notices, recordPath, related, site } from './content';
 import { sectionPath, type Route, type ContentRecord } from './model';
-import { escape, arrow, factsList, icon, instagramUrl, link, linkedinUrl, nightRuler, soundcloudUrl, statusNote } from './html';
-import { hashFor } from './routes';
+import { escape, arrow, factsList, icon, instagramUrl, link, linkedinUrl, soundcloudUrl, statusNote } from './html';
 import { entryCard } from './cards';
-import { nightSetChart, phaseIndex, phaseLabel } from './night';
 
 function rich(text: string): string {
     return /<br\s*\/?\s*>/i.test(text) ? displayTitle(text) : escape(text);
@@ -32,20 +30,8 @@ export function home(route: Route): string {
     const selected = sound ? source : source.slice(0, 3);
     return `<article id="main" class="home-page" tabindex="-1"><div class="overview-copy">
       <section class="home-intro">${statusNote(site.identities[route.dataset].status, 'home-status')}<h1>${displayTitle(page.title)}</h1><p>${escape(page.intro)}</p><div class="intro-actions">${link(sectionPath('work', route.dataset), escape(copy[route.dataset].about.workLink) + ' ' + arrow(), 'text-link intro-proof')}${link(sectionPath('contact', route.dataset), escape(page.contactLink) + ' ' + arrow(), 'text-link intro-contact')}</div></section>
-      <section class="selected-work"><div class="section-heading"><h2>${escape(page.selectedHeading)} <span class="count" aria-hidden="true">${selected.length}</span></h2>${link(sectionPath('work', route.dataset), 'View all ' + arrow(), 'text-link')}</div>${sound ? nightSet(selected) : `<div class="work-table">${selected.map(overviewRow).join('')}</div>`}</section>
+      ${sound ? '' : `<section class="selected-work"><div class="section-heading"><h2>${escape(page.selectedHeading)} <span class="count" aria-hidden="true">${selected.length}</span></h2>${link(sectionPath('work', route.dataset), 'View all ' + arrow(), 'text-link')}</div><div class="work-table">${selected.map(overviewRow).join('')}</div></section>`}
     </div></article>`;
-}
-
-/**
- * Livicee's Overview orders every mix through one night. The chart previews the arc, and each named row links
- * to its mix with the corresponding phase. Mixes not yet placed in the night follow the ordered selections.
- */
-function nightSet(mixes: ContentRecord[]): string {
-    const placed = mixes.filter(m => m.night).sort((a, b) => phaseIndex(a.night!) - phaseIndex(b.night!));
-    const unplaced = mixes.filter(m => !m.night);
-    const items = placed.map(m => `<li style="--phase:${phaseIndex(m.night!) + 1}"><a class="set-mix" data-phase="${m.night}" href="${escape(hashFor(recordPath(m)))}"><span class="visually-hidden">${escape(phaseLabel(m.night!))}: </span><strong>${escape(m.title)}</strong><span class="set-style">${escape(m.tags[0] ?? m.subtitle)}</span><span class="set-phase" aria-hidden="true">${escape(phaseLabel(m.night!))}</span>${arrow()}</a></li>`).join('');
-    const set = placed.length ? `<div class="night-set">${nightRuler()}<div class="set-stage">${nightSetChart(placed.map(m => m.night!), 'set-chart')}<ol class="set-mixes">${items}</ol></div></div>` : '';
-    return set + (unplaced.length ? `<div class="work-table">${unplaced.map(overviewRow).join('')}</div>` : '');
 }
 
 function overviewRow(record: ContentRecord): string {

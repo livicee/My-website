@@ -295,7 +295,7 @@ try {
       const status = header.match(/^\s*<span class="header-status"[^>]*>(.*?)<\/span>/s);
       assert.ok(status, 'the availability line is first in the header');
       assert.equal(status[1], site.identities[dataset].status || `© ${new Date().getFullYear()} ${site.author}`, `${dataset}: availability, or copyright where there is none`);
-      assert.equal((html.match(/data-global-search/g) ?? []).length, 1, 'one persistent search field');
+      assert.equal((html.match(/data-global-search/g) ?? []).length, dataset === 'sound' ? 0 : 1, 'search is available only for Content');
       const navigation = html.match(/<nav\b[^>]*class="navigation"[^>]*>(.*?)<\/nav>/s)?.[1];
       assert.ok(navigation);
       assert.match(header, /<div class="mode-switch" role="group" aria-label="Choose identity">/);
@@ -309,15 +309,15 @@ try {
       assert.equal((html.match(/class="mode-switch"/g) ?? []).length, 1, 'one persistent switch serves both desktop and phone');
       assert.match(navigation, /^\s*<div class="nav-links">/, 'the rail starts with site destinations');
       assert.doesNotMatch(navigation, /class="mode-switch"/, 'identity controls stay in the masthead');
-      assert.ok(header.indexOf('class="header-status"') < header.indexOf('class="mode-switch"') && header.indexOf('class="mode-switch"') < header.indexOf('class="global-search"'), 'availability, identity and search keep a predictable DOM order');
-      assert.match(header, /data-global-search/, 'search remains in the header');
+      if (dataset === 'production') assert.ok(header.indexOf('class="header-status"') < header.indexOf('class="mode-switch"') && header.indexOf('class="mode-switch"') < header.indexOf('class="global-search"'), 'availability, identity and search keep a predictable DOM order');
+      if (dataset === 'production') assert.match(header, /data-global-search/, 'Content search remains in the header');
       assert.doesNotMatch(html, /class="(?:mobile-brand|identity-caption)"/);
       assert.match(html, /<figure\b[^>]*class="identity-field"[^>]*aria-label="[^"]+"/);
     }
     assert.match(content, /<button data-mode="production"[^>]*aria-label="Livi Cracknell"/);
     assert.match(sound, /<button data-mode="sound"[^>]*aria-label="DJ Livicee"/);
     assert.match(content, /data-global-search[^>]*placeholder="Search projects"/);
-    assert.match(sound, /data-global-search[^>]*placeholder="Search mixes"/);
+    assert.doesNotMatch(sound, /data-global-search/);
     assert.doesNotMatch(content, /<kbd>/);
     for (const path of ['/', '/about', '/livicee', '/livicee/about']) {
       const route = parseRoute(`#${path}`), target = route.dataset === 'sound' ? 'production' : 'sound';
@@ -349,8 +349,8 @@ try {
     const content = shell(parseRoute('#/')), sound = shell(parseRoute('#/livicee'));
     assert.equal((content.match(/class="project-row"/g) ?? []).length, 3);
     assert.match(content, /class="section-heading"[\s\S]*?<h2>[^<]*<span class="count"[^>]*>3<\/span>/);
-    assert.equal((sound.match(/class="set-mix"/g) ?? []).length, 5);
-    assert.match(sound, /class="section-heading"[\s\S]*?<h2>[^<]*<span class="count"[^>]*>5<\/span>/);
+    assert.doesNotMatch(sound, /class="set-mix"/);
+    assert.doesNotMatch(sound, /class="selected-work"/);
     assert.equal((shell(parseRoute('#/work')).match(/class="overview-item"/g) ?? []).length, 10, 'the complete project collection remains available');
   });
   check('collections do not select a first record', () => {
@@ -591,24 +591,10 @@ try {
       assert.ok(page.indexOf('class="deck') < page.indexOf('class="night-place"') && page.indexOf('class="night-place"') < page.indexOf('class="story"'), m.id);
     }
   });
-  check('Livicee Overview lays every mix across one night, each column linking its mix and its stretch', () => {
-    const html = shell(parseRoute('#/livicee'));
-    const links = [...html.matchAll(/<a class="set-mix" data-phase="([a-z]+)" href="([^"]+)">/g)].map(m => [m[1], m[2]]);
-    const byNight = [...all('mixes')].sort((a, b) => NIGHT.findIndex(p => p.id === a.night) - NIGHT.findIndex(p => p.id === b.night));
-    assert.deepEqual(links, byNight.map(m => [m.night, hashFor(recordPath(m))]));
-    for (const mix of all('mixes')) assert.match(html, new RegExp(`<path class="night-lit" data-phase="${mix.night}"`), mix.id);
-    // Each link names its stretch for screen readers; the chart itself is decorative.
-    assert.match(html, /<span class="visually-hidden">Peak: <\/span><strong>Night shift<\/strong>/);
-    assert.match(html, /<svg class="night-svg set-chart"[^>]*aria-hidden="true"/);
-    // Content's Overview keeps its project rows.
-    assert.doesNotMatch(shell(parseRoute('#/')), /night-set/);
-    // A mix with no place in the night still appears, as a row after the chart.
-    const mix = get('mixes', 'soft-focus'), night = mix.night;
-    delete mix.night;
-    const partial = shell(parseRoute('#/livicee'));
-    mix.night = night;
-    assert.doesNotMatch(partial, /data-phase="winddown" href/);
-    assert.match(partial, /class="project-row" href="#\/livicee\/mixes\/soft-focus"/);
+  check('DJ Overview omits selected mixes while the main Mixes collection remains', () => {
+    assert.doesNotMatch(shell(parseRoute('#/livicee')), /selected-work|night-set|set-mix|data-global-search/);
+    assert.match(shell(parseRoute('#/livicee/mixes')), /class="crate-row/);
+    assert.match(shell(parseRoute('#/')), /selected-work|data-global-search/);
   });
   check('records carry a document header and can be inspected as their content model, in place', () => {
     const project = get('work', 'dam-migration');
