@@ -1,10 +1,7 @@
-import { djHighlights } from './djAbout';
 import { all, copy, email, mediaUrl, notices, recordPath, related, site } from './content';
 import { sectionPath, type Route, type ContentRecord } from './model';
-import { escape, arrow, factsList, icon, instagramUrl, link, linkedinUrl, nightRuler, soundcloudUrl, statusNote } from './html';
-import { hashFor } from './routes';
+import { escape, arrow, factsList, icon, instagramUrl, link, linkedinUrl, soundcloudUrl, statusNote } from './html';
 import { entryCard } from './cards';
-import { nightSetChart, phaseIndex, phaseLabel } from './night';
 
 function rich(text: string): string {
     return /<br\s*\/?\s*>/i.test(text) ? displayTitle(text) : escape(text);
@@ -33,20 +30,8 @@ export function home(route: Route): string {
     const selected = sound ? source : source.slice(0, 3);
     return `<article id="main" class="home-page" tabindex="-1"><div class="overview-copy">
       <section class="home-intro">${statusNote(site.identities[route.dataset].status, 'home-status')}<h1>${displayTitle(page.title)}</h1><p>${escape(page.intro)}</p><div class="intro-actions">${link(sectionPath('work', route.dataset), escape(copy[route.dataset].about.workLink) + ' ' + arrow(), 'text-link intro-proof')}${link(sectionPath('contact', route.dataset), escape(page.contactLink) + ' ' + arrow(), 'text-link intro-contact')}</div></section>
-      <section class="selected-work"><div class="section-heading"><h2>${escape(page.selectedHeading)} <span class="count" aria-hidden="true">${selected.length}</span></h2>${link(sectionPath('work', route.dataset), 'View all ' + arrow(), 'text-link')}</div>${sound ? nightSet(selected) : `<div class="work-table">${selected.map(overviewRow).join('')}</div>`}</section>
+      ${sound ? '' : `<section class="selected-work"><div class="section-heading"><h2>${escape(page.selectedHeading)} <span class="count" aria-hidden="true">${selected.length}</span></h2>${link(sectionPath('work', route.dataset), 'View all ' + arrow(), 'text-link')}</div><div class="work-table">${selected.map(overviewRow).join('')}</div></section>`}
     </div></article>`;
-}
-
-/**
- * Livicee's Overview orders every mix through one night. The chart previews the arc, and each named row links
- * to its mix with the corresponding phase. Mixes not yet placed in the night follow the ordered selections.
- */
-function nightSet(mixes: ContentRecord[]): string {
-    const placed = mixes.filter(m => m.night).sort((a, b) => phaseIndex(a.night!) - phaseIndex(b.night!));
-    const unplaced = mixes.filter(m => !m.night);
-    const items = placed.map(m => `<li style="--phase:${phaseIndex(m.night!) + 1}"><a class="set-mix" data-phase="${m.night}" href="${escape(hashFor(recordPath(m)))}"><span class="visually-hidden">${escape(phaseLabel(m.night!))}: </span><strong>${escape(m.title)}</strong><span class="set-style">${escape(m.tags[0] ?? m.subtitle)}</span><span class="set-phase" aria-hidden="true">${escape(phaseLabel(m.night!))}</span>${arrow()}</a></li>`).join('');
-    const set = placed.length ? `<div class="night-set">${nightRuler()}<div class="set-stage">${nightSetChart(placed.map(m => m.night!), 'set-chart')}<ol class="set-mixes">${items}</ol></div></div>` : '';
-    return set + (unplaced.length ? `<div class="work-table">${unplaced.map(overviewRow).join('')}</div>` : '');
 }
 
 function overviewRow(record: ContentRecord): string {
@@ -92,3 +77,46 @@ function roles(): string {
         return `<details class="role-disclosure" data-record-id="${escape(r.id)}"><summary><span class="role-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><div class="role-heading"><span class="role-dates">${escape(dates(r.year))}</span><h2 class="role-title">${escape(r.title)}</h2><small>${escape(r.subtitle)}</small></div>${icon('chevron')}</summary><div class="role-content"><p>${escape(r.summary)}</p>${r.story?.map(s => '<p>' + escape(s.body) + '</p>').join('') ?? ''}${facts}${linked}</div></details>`;
     }).join('') + '</section>';
 }
+
+/** Supplied names are typography, not recreated brand logos. */
+function djHighlights(data: { cities: string[]; brands: string[]; venues: string[]; after: string }): string {
+    const letters = (name: string, row: number) => {
+        let index = 0;
+        const words = name.split(' ').map(word => `<span class="brand-word">${Array.from(word).map(letter => `<span class="brand-letter" style="--reveal-delay:${Math.min(700, row * 60 + index++ * 18)}ms">${escape(letter)}</span>`).join('')}</span>`).join(' ');
+        return `<span class="visually-hidden">${escape(name)}</span><span aria-hidden="true">${words}</span>`;
+    };
+    return `<style>.dj-destinations, .dj-brands, .dj-venues { margin-block: 36px; }
+.about-body .dj-section-label { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+.dj-section-label > span { color: var(--pink); font: 22px var(--mono); }
+.about-body .dj-section-label h2 { margin: 0; }
+.dj-city-board, .dj-brand-wall, .dj-venue-list { list-style: none; padding: 0; margin: 0; }
+.dj-city-board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); column-gap: 24px; }
+.dj-city-board li { display: grid; grid-template-columns: 24px minmax(0, 1fr) 14px; align-items: center; gap: 10px; padding-block: 14px; border-bottom: 1px solid var(--line); color: var(--text-soft); font: 14px/1.5 var(--mono); }
+.dj-city-number { color: var(--pink); font-size: 12px; }
+.dj-city-mark { color: var(--muted); }
+.about-body .dj-brands h2, .about-body .dj-venues h2 { margin: 0 0 12px; }
+.about-body .dj-highlight-intro { margin-bottom: 20px; font-size: var(--type-detail); }
+.dj-brand-wall { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.dj-brand-wall li { padding: 22px 16px 22px 0; border-bottom: 1px solid var(--line); color: var(--foreground); font: 600 clamp(20px, 2vw, 27px)/1.2 var(--sans); letter-spacing: -.025em; overflow-wrap: anywhere; }
+.dj-brand-wall li:nth-child(3n + 2) { color: var(--pink); }
+.brand-word { display: inline-block; }
+.brand-letter { display: inline-block; }
+[data-revealed='true'] .brand-letter { animation: dj-brand-reveal 480ms ease-out both; animation-delay: var(--reveal-delay); }
+.dj-venue-list { display: flex; flex-wrap: wrap; gap: 10px 20px; color: var(--text-soft); font-size: var(--type-detail); }
+.dj-venue-list li { padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+@keyframes dj-brand-reveal { from { transform: translateY(3px); color: var(--pink); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { [data-revealed='true'] .brand-letter { animation: none; } }
+@media (max-width: 480px) { .dj-city-board { grid-template-columns: 1fr; } .dj-brand-wall li { font-size: 21px; padding-block: 18px; } }
+</style><section class="dj-destinations" aria-labelledby="dj-cities-heading">
+      <div class="dj-section-label"><span aria-hidden="true">↗</span><h2 id="dj-cities-heading">Cities played</h2></div>
+      <ol class="dj-city-board">${data.cities.map((city, i) => `<li><span class="dj-city-number" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><span>${escape(city)}</span><span class="dj-city-mark" aria-hidden="true">↗</span></li>`).join('')}</ol>
+    </section>
+    <section class="dj-brands" aria-labelledby="dj-brands-heading" data-dj-reveal data-revealed="true">
+      <h2 id="dj-brands-heading">In good company.</h2><p class="dj-highlight-intro">Brands and events I’ve played for.</p>
+      <ul class="dj-brand-wall">${data.brands.map((name, i) => `<li>${letters(name, i)}</li>`).join('')}</ul>
+    </section>
+    <section class="dj-venues" aria-labelledby="dj-venues-heading"><h2 id="dj-venues-heading">Places with a pulse.</h2>
+      <ul class="dj-venue-list">${data.venues.map(name => `<li>${escape(name)}</li>`).join('')}</ul>
+    </section>`;
+}
+
